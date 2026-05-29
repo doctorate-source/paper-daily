@@ -511,6 +511,7 @@ def merge_with_retained_papers(
     existing_payload: dict[str, Any],
     now: dt.datetime,
     recent_history_days: int,
+    active_topic_ids: set[str] | None = None,
 ) -> tuple[list[dict[str, Any]], dict[str, int]]:
     existing_papers = existing_payload.get("papers", []) if isinstance(existing_payload, dict) else []
     existing_generated_at = str(existing_payload.get("generated_at_iso") or existing_payload.get("generated_at") or now.isoformat())
@@ -520,6 +521,17 @@ def merge_with_retained_papers(
     for paper in existing_papers:
         if not isinstance(paper, dict):
             continue
+        if active_topic_ids is not None:
+            paper_topic_ids = {
+                str(paper.get("seed_topic") or ""),
+                str((paper.get("best_match") or {}).get("topic_id") or ""),
+            }
+            for match in paper.get("matches", []):
+                if isinstance(match, dict):
+                    paper_topic_ids.add(str(match.get("topic_id") or ""))
+            if not (paper_topic_ids & active_topic_ids):
+                dropped_low += 1
+                continue
         key = paper_key(paper)
         if not key:
             continue
@@ -623,6 +635,7 @@ def collect(
     default_config = load_json(config_path)
     config = load_issue_config(default_config)
     topics = parse_topics(config)
+    active_topic_ids = {topic.id for topic in topics}
     now = dt.datetime.now(dt.timezone.utc)
     existing_payload = load_existing_payload(output_path)
     cutoff, collection_mode = collection_cutoff(existing_payload, now, days, incremental_since_last_run)
@@ -655,9 +668,11 @@ def collect(
         if existing.get("papers"):
             print("All sources failed; preserving existing paper data.", file=sys.stderr)
             retained_papers, retention_stats = merge_with_retained_papers(
-                [], existing_payload, now, recent_history_days
+                [], existing_payload, now, recent_history_days, active_topic_ids
             )
             retained_papers.sort(key=lambda p: (p["best_match"]["score"], p.get("published", "")), reverse=True)
+            existing["config_source"] = "issue" if config is not default_config else "file"
+            existing["topics"] = [topic.__dict__ for topic in topics]
             existing["papers"] = retained_papers
             existing["generated_at"] = email.utils.format_datetime(now)
             existing["generated_at_iso"] = now.isoformat()
@@ -727,7 +742,7 @@ def collect(
             paper["chinese_summary"] = fallback_summary(paper, paper["best_match"])
 
     merged_papers, retention_stats = merge_with_retained_papers(
-        recent_papers, existing_payload, now, recent_history_days
+        recent_papers, existing_payload, now, recent_history_days, active_topic_ids
     )
     merged_papers.sort(key=lambda p: (p["best_match"]["score"], p.get("published", "")), reverse=True)
 
