@@ -1,291 +1,2012 @@
 {
-  "generated_at": "Fri, 29 May 2026 12:02:22 +0000",
-  "generated_at_iso": "2026-05-29T12:02:22.612944+00:00",
+  "generated_at": "Fri, 29 May 2026 12:32:39 +0000",
+  "generated_at_iso": "2026-05-29T12:32:39.815154+00:00",
   "config_source": "issue",
   "topics": [
     {
-      "id": "llm_low_precision_quantization",
-      "name": "大模型低精度量化",
-      "description": "关注大语言模型低比特量化、混合精度、量化感知训练、后训练量化、权重量化、激活量化、KV cache 量化以及量化对推理性能和精度的影响。",
+      "id": "iron_bound_carbon",
+      "name": "铁结合态碳",
+      "description": "关注铁氧化物、活性铁、铁矿物与有机碳结合形成的铁结合态碳，以及铁还原、铁氧化和有机-铁复合过程对土壤有机碳稳定、封存与周转的影响。",
       "keywords": [
-        "large language model quantization",
-        "LLM quantization",
-        "low-bit quantization",
-        "post-training quantization",
-        "weight-only quantization",
-        "activation quantization",
-        "mixed precision",
-        "FP8",
-        "INT4",
-        "INT8",
-        "KV cache quantization"
+        "iron-bound carbon",
+        "iron associated organic carbon",
+        "Fe-bound organic carbon",
+        "reactive iron",
+        "iron oxides",
+        "ferrihydrite",
+        "goethite",
+        "organo-iron complexes",
+        "iron-mediated carbon stabilization",
+        "soil organic carbon stabilization"
       ],
       "arxiv_categories": [
-        "cs.CL",
+        "physics.geo-ph",
+        "q-bio.PE",
         "cs.LG",
-        "cs.AI",
-        "cs.DC"
+        "stat.ML"
       ]
     },
     {
-      "id": "tensor_compute_unit_architecture",
-      "name": "张量计算单元结构",
-      "description": "关注 GPU/NPU/TPU 张量计算单元、矩阵乘加阵列、数据流架构、片上存储层次、低精度张量核、AI 加速器微架构和算子映射。",
+      "id": "mineral_associated_carbon",
+      "name": "矿物结合态碳",
+      "description": "关注矿物结合态有机碳、矿物相关有机质、黏土矿物和金属氧化物表面对有机碳吸附、保护、稳定和长期封存的机制。",
       "keywords": [
-        "tensor processing unit",
-        "tensor core",
-        "matrix multiply unit",
-        "systolic array",
-        "AI accelerator architecture",
-        "NPU architecture",
-        "GPU tensor core",
-        "low precision tensor compute",
-        "dataflow architecture",
-        "on-chip memory hierarchy"
+        "mineral-associated organic carbon",
+        "mineral associated organic matter",
+        "MAOC",
+        "organo-mineral interactions",
+        "soil carbon sequestration",
+        "soil organic carbon stabilization",
+        "clay minerals",
+        "mineral surfaces",
+        "carbon mineral association",
+        "particulate organic carbon"
       ],
       "arxiv_categories": [
-        "cs.AR",
-        "cs.DC",
+        "physics.geo-ph",
+        "q-bio.PE",
         "cs.LG",
-        "cs.PF"
+        "stat.ML"
       ]
     },
     {
-      "id": "llm_inference_cluster_communication",
-      "name": "大模型推理集群通信优化",
-      "description": "关注分布式大模型推理、prefill/decode 分离、张量并行、流水并行、专家并行、跨节点通信、调度、负载均衡和 serving 系统吞吐延迟优化。",
+      "id": "remote_sensing_retrieval_prediction",
+      "name": "遥感反演与预测",
+      "description": "关注基于卫星、多光谱、高光谱、近红外和时序遥感数据的土壤有机碳、土壤性质、植被与生态环境变量反演、制图和预测。",
       "keywords": [
-        "LLM inference serving",
-        "distributed inference",
-        "inference cluster",
-        "tensor parallelism",
-        "pipeline parallelism",
-        "expert parallelism",
-        "all-reduce",
-        "collective communication",
-        "prefill decode disaggregation",
-        "serving scheduler"
+        "remote sensing retrieval",
+        "remote sensing inversion",
+        "soil organic carbon mapping",
+        "soil organic carbon prediction",
+        "hyperspectral remote sensing",
+        "multispectral remote sensing",
+        "satellite remote sensing",
+        "digital soil mapping",
+        "Sentinel-2",
+        "Landsat"
       ],
       "arxiv_categories": [
-        "cs.DC",
-        "cs.PF",
-        "cs.CL",
-        "cs.LG"
+        "cs.CV",
+        "cs.LG",
+        "stat.ML",
+        "eess.IV",
+        "physics.geo-ph"
       ]
     },
     {
-      "id": "kvcache_compression_storage_scheduling",
-      "name": "KV cache 压缩与存储调度",
-      "description": "关注大模型推理中的 KV cache 压缩、淘汰、分页、卸载、预取、层级存储、显存管理和长上下文推理效率优化。",
+      "id": "machine_learning_soil_carbon",
+      "name": "机器学习",
+      "description": "关注机器学习、深度学习、时空建模和可解释 AI 在土壤碳、矿物结合态碳、铁结合态碳、遥感反演、预测制图和不确定性评估中的应用。",
       "keywords": [
-        "KV cache compression",
-        "KV cache eviction",
-        "KV cache scheduling",
-        "paged attention",
-        "attention cache",
-        "long context inference",
-        "memory offloading",
-        "GPU memory management",
-        "cache prefetching",
-        "LLM serving memory"
+        "machine learning",
+        "deep learning",
+        "random forest",
+        "gradient boosting",
+        "Gaussian process",
+        "spatiotemporal prediction",
+        "uncertainty quantification",
+        "explainable AI",
+        "soil organic carbon prediction",
+        "remote sensing machine learning"
       ],
       "arxiv_categories": [
-        "cs.CL",
         "cs.LG",
-        "cs.DC",
-        "cs.PF"
+        "stat.ML",
+        "cs.CV",
+        "eess.IV",
+        "physics.geo-ph"
       ]
     }
   ],
   "papers": [
     {
-      "id": "2605.28803v1",
+      "id": "2605.30342v1",
       "source": "arXiv",
-      "title": "Ω-QVLA: Robust Quantization for Vision-Language-Action Models via Composite Rotation and Per-step Scaling",
+      "title": "Uncertainty-driven 3D Gaussian Splatting Active Mapping via Anisotropic Visibility Field",
       "authors": [
-        "Xinyu Wang",
-        "Mingze Li",
-        "Sicheng Lyu",
-        "Dongxiu Liu",
-        "Kaicheng Yang",
-        "Ziyu Zhao",
-        "Yufei Cui",
-        "Xiao-Wen Chang",
-        "Peng Lu"
+        "Shangjie Xue",
+        "Jesse Dill",
+        "Dhruv Ahuja",
+        "Frank Dellaert",
+        "Panagiotis Tsiotras",
+        "Danfei Xu"
       ],
-      "summary": "Vision-Language-Action (VLA) models unify perception, reasoning, and control within a single policy, yet their multi-billion-parameter backbones and diffusion-based action heads make on-device deployment prohibitively expensive. Prior quantization efforts offer only partial solutions, compressing the LLM backbone while leaving the DiT action head at full precision, or resorting to mixed-precision schemes, driven by the belief that uniformly quantizing the action head is inherently unstable. We challenge this assumption with Omega-QVLA, the first training-free post-training quantization framework that compresses both the language backbone and the entire diffusion action head of a VLA model to a uniform W4A4 precision, eliminating the need for mixed-precision allocation. Omega-QVLA combines a composite SVD-Hadamard rotation that equalizes per-channel weight energy while diffusing residual activation outliers with per-step DiT activation scaling quantization that absorbs dynamic-range drift across denoising steps. On LIBERO, Omega-QVLA compresses Pi 0.5 and GR00T N1.5 to W4A4 with 98.0% and 87.8% task success rates, matching or exceeding their FP16 references of 97.1% and 87.0%, while reducing the static memory footprint by 71.3%. Real-world manipulation experiments further confirm smooth, accurate manipulation where prior methods fail. Code is available at https://github.com/UCMP13753/Omega-QVLA.",
-      "published": "2026-05-27T17:55:01Z",
-      "updated": "2026-05-27T17:55:01Z",
-      "paper_url": "http://arxiv.org/abs/2605.28803v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.28803v1",
+      "summary": "We present Gaussian Splatting Anisotropic Visibility Field (GAVIS), a novel framework for uncertainty quantification and active mapping in 3DGS. Our key insight is that regions unseen from the training views yield unreliable predictions from the 3DGS. To address this, we introduce a principled and efficient method for quantifying the visibility field in 3DGS, defined as the anisotropic visibility of each particle with respect to the training views, and represented using spherical harmonics. The resulting visibility field is integrated into a Bayesian Network-based uncertainty-aware 3DGS rasterizer, enabling real-time (200 FPS) uncertainty quantification for synthesized views. Active mapping is further performed within a maximum information gain framework building on this formulation. Extensive experiments across diverse environments demonstrate that GAVIS consistently and significantly outperforms prior approaches in both accuracy and efficiency. Moreover, beyond standalone use, our method can be applied post-hoc to improve the performance of existing approaches.",
+      "published": "2026-05-28T17:59:32Z",
+      "updated": "2026-05-28T17:59:32Z",
+      "paper_url": "http://arxiv.org/abs/2605.30342v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30342v1",
       "categories": [
         "cs.CV",
-        "cs.LG"
+        "cs.RO"
       ],
-      "seed_topic": "llm_low_precision_quantization",
+      "seed_topic": "machine_learning_soil_carbon",
       "matches": [
         {
-          "topic_id": "llm_low_precision_quantization",
-          "topic_name": "大模型低精度量化",
-          "score": 0.853,
-          "level": "high",
-          "reason": "关键词命中：post-training quantization；arXiv 分类重合：cs.LG",
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.184,
+          "level": "low",
+          "reason": "关键词命中：uncertainty quantification；arXiv 分类重合：cs.CV",
           "keyword_hits": [
-            "post-training quantization"
-          ],
-          "llm_reason": "论文涉及大模型后训练量化，旨在实现低比特（W4A4）权重量化和激活量化，与我的研究方向“大模型低精度量化”高度吻合，特别是该方法在LLM和扩散模型上的均匀量化技术对研究有直接参考价值。"
+            "uncertainty quantification"
+          ]
         },
         {
-          "topic_id": "tensor_compute_unit_architecture",
-          "topic_name": "张量计算单元结构",
-          "score": 0.156,
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.081,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.0,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.0,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "machine_learning_soil_carbon",
+        "topic_name": "机器学习",
+        "score": 0.184,
+        "level": "low",
+        "reason": "关键词命中：uncertainty quantification；arXiv 分类重合：cs.CV",
+        "keyword_hits": [
+          "uncertainty quantification"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "We present Gaussian Splatting Anisotropic Visibility Field (GAVIS), a novel framework for uncertainty quantification and active mapping in 3DGS.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：uncertainty quantification；arXiv 分类重合：cs.CV"
+      },
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2605.30329v1",
+      "source": "arXiv",
+      "title": "SoundnessBench: Can Your AI Scientist Really Tell Good Research Ideas from Bad Ones?",
+      "authors": [
+        "Sy-Tuyen Ho",
+        "Minghui Liu",
+        "Huy Nghiem",
+        "Furong Huang"
+      ],
+      "summary": "Autonomous AI research agents aim to accelerate scientific discovery by automating the research pipeline, from hypothesis generation to peer review. However, existing benchmarks rarely test a fundamental bottleneck: whether Large Language Models can judge the methodological viability of a research idea before expending time and computational resources. We introduce SoundnessBench, a curated benchmark of 1,099 machine-learning research proposals reconstructed from ICLR submissions, labeled with reviewer soundness sub-scores, and audited against source papers. SoundnessBench should be interpreted as a benchmark for recoverable proposal-stage soundness rather than exact prediction of full-paper review outcomes. Across 12 frontier LLMs, we find a pervasive optimism bias: under standard prompting, models frequently rate low-soundness proposals as sound, while aggressive prompting largely shifts errors from false positives to false negatives. Additional controls for public-corpus contamination, paper-identifying phrases, surface features, and human audit quality suggest that this behavior is not explained by a single confounder. Our results indicate that current LLMs are not yet reliable as standalone first-gate evaluators for scientific rigor.",
+      "published": "2026-05-28T17:57:37Z",
+      "updated": "2026-05-28T17:57:37Z",
+      "paper_url": "http://arxiv.org/abs/2605.30329v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30329v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.175,
           "level": "low",
           "reason": "arXiv 分类重合：cs.LG",
           "keyword_hits": []
         },
         {
-          "topic_id": "kvcache_compression_storage_scheduling",
-          "topic_name": "KV cache 压缩与存储调度",
-          "score": 0.125,
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.081,
           "level": "low",
           "reason": "arXiv 分类重合：cs.LG",
           "keyword_hits": []
         },
         {
-          "topic_id": "llm_inference_cluster_communication",
-          "topic_name": "大模型推理集群通信优化",
-          "score": 0.094,
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.062,
           "level": "low",
           "reason": "arXiv 分类重合：cs.LG",
           "keyword_hits": []
         }
       ],
       "best_match": {
-        "topic_id": "llm_low_precision_quantization",
-        "topic_name": "大模型低精度量化",
-        "score": 0.853,
-        "level": "high",
-        "reason": "关键词命中：post-training quantization；arXiv 分类重合：cs.LG",
-        "keyword_hits": [
-          "post-training quantization"
-        ],
-        "llm_reason": "论文涉及大模型后训练量化，旨在实现低比特（W4A4）权重量化和激活量化，与我的研究方向“大模型低精度量化”高度吻合，特别是该方法在LLM和扩散模型上的均匀量化技术对研究有直接参考价值。"
+        "topic_id": "machine_learning_soil_carbon",
+        "topic_name": "机器学习",
+        "score": 0.175,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG",
+        "keyword_hits": []
       },
       "chinese_summary": {
-        "problem": "现有VLA模型量化方法大多只压缩LLM主干而保持DiT动作头全精度，或采用混合精度，因为认为均匀量化动作头不稳定，导致无法实现模型整体的低比特均匀量化，阻碍端侧部署。",
-        "method": "提出训练免费的后训练量化方法Ω-QVLA，结合复合SVD-Hadamard旋转均衡每通道权重能量并扩散激活异常值，以及逐步DiT激活缩放量化技术吸收去噪步骤间的动态范围漂移，实现对LLM主干和扩散动作头的统一W4A4量化。",
-        "innovation": "1) 首次对VLA模型实现无需训练的W4A4统一量化，打破扩散动作头无法均匀量化的假设；2) 提出复合SVD-Hadamard旋转，同时解决权重量化困难和激活异常值问题；3) 设计逐步DiT激活缩放量化方法，无需混合精度即可处理去噪过程中激活的动态范围变化。",
-        "evidence": "在LIBERO基准上，Ω-QVLA将Pi 0.5和GR00T N1.5压缩至W4A4，任务成功率分别达98.0%和87.8%，匹配或超过FP16基准的97.1%和87.0%，静态内存占用减少71.3%；真实世界操作实验验证了平滑准确的操作，优于先前方法。",
-        "limitations": "摘要未提及除LIBERO外的泛化性，量化仅针对特定VLA模型架构，逐步缩放对更长去噪步骤的适应性需进一步验证，未讨论量化对推理延迟的影响。",
-        "why_relevant": "论文涉及大模型后训练量化，旨在实现低比特（W4A4）权重量化和激活量化，与我的研究方向“大模型低精度量化”高度吻合，特别是该方法在LLM和扩散模型上的均匀量化技术对研究有直接参考价值。"
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Autonomous AI research agents aim to accelerate scientific discovery by automating the research pipeline, from hypothesis generation to peer review.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG"
       },
-      "first_seen_at": "2026-05-28T09:35:48.728882+00:00",
-      "last_seen_at": "2026-05-28T13:18:49.361053+00:00",
-      "retained_from_previous_run": true
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
     },
     {
-      "id": "2605.28488v1",
+      "id": "2605.30327v1",
       "source": "arXiv",
-      "title": "Bridging Maximum Likelihood and Optimal Transport for Efficient Inference and Model Selection in Stochastic Block Models",
+      "title": "Reasoning with Sampling: Cutting at Decision Points",
       "authors": [
-        "Simon Queric",
-        "Cédric Vincent-Cuaz",
-        "Charles Bouveyron",
-        "Marco Corneli"
+        "Felix Zhou",
+        "Anay Mehrotra",
+        "Quanquan C. Liu"
       ],
-      "summary": "We study inference in stochastic block models (SBMs) through the lens of optimal transport (OT). We first establish that maximum likelihood variational inference (MLVI) can be interpreted as a semi-relaxed Gromov-Wasserstein (srGW) projection with entropic regularization. While this formulation yields accurate clustering, the entropic regularization prevents transport plans to be sparse, hindering intrinsic model selection. Consequently, we investigate unregularized srGW estimators, and prove that they consistently recover both the SBM connectivity matrix and latent cluster assignments in the asymptotic regime. However, this asymptotic property does not translate into reliable model selection in finite samples, and calls for additional mechanisms to promote sparsity in the inferred cluster proportions. We empirically show that such a regularized formulation yields estimators that simultaneously recover model parameters and select the number of clusters in a single optimization problem, thereby avoiding costly grid search or heuristic model selection procedures.",
-      "published": "2026-05-27T13:44:43Z",
-      "updated": "2026-05-27T13:44:43Z",
-      "paper_url": "http://arxiv.org/abs/2605.28488v1",
-      "pdf_url": "https://arxiv.org/pdf/2605.28488v1",
+      "summary": "Frontier reasoning models are produced by posttraining base language models with reinforcement learning. Recent work has challenged this by showing that sampling from a sharpened version of the base model's distribution, a so-called power distribution, elicits comparable reasoning without additional training, curated datasets, or verifiers. However, making this method practical requires efficiently sampling from the power distribution. A sampler needs to \"mix\" to the power distribution, which necessitates moving between modes of the target distribution; intuitively, e.g., trying different reasoning strategies. The samplers proposed in prior works repeatedly select a \"cut\" position in the current reasoning trace uniformly at random and resample the suffix from that position onward. However, reasoning traces typically contain a few consequential decisions (e.g., the choice of proof strategy or algorithm), and we observe that a uniformly chosen cut tends to rewrite local details rather than revisit decision points. We introduce an algorithm (Entropy-Cut Metropolis-Hastings) that uses the base model's next-token entropy as a proxy to identify key decision points and resample from those positions. We empirically verify that entropy jumps are a useful proxy for decision points and, in a stylized model of reasoning, prove that our method's mixing time scales with the number of decisions in a trace rather than with the number of tokens, which can be much larger. Across MATH500, HumanEval, GPQA Diamond, and AIME26, our method consistently improves over baselines and RL-trained models.",
+      "published": "2026-05-28T17:57:32Z",
+      "updated": "2026-05-28T17:57:32Z",
+      "paper_url": "http://arxiv.org/abs/2605.30327v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30327v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL",
+        "math.ST",
+        "stat.ML"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.163,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG、stat.ML",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG、stat.ML",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG、stat.ML",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.1,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG、stat.ML",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "machine_learning_soil_carbon",
+        "topic_name": "机器学习",
+        "score": 0.163,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG、stat.ML",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Frontier reasoning models are produced by posttraining base language models with reinforcement learning.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG、stat.ML"
+      },
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2605.30253v1",
+      "source": "arXiv",
+      "title": "Wasserstein Contraction of Coordinate Ascent Variational Inference",
+      "authors": [
+        "Rocco Caprio",
+        "Adrien Corenflos",
+        "Sam Power"
+      ],
+      "summary": "We study the contraction in Wasserstein distance of the coordinate ascent variational inference algorithm. This is shown to hold under a transport-information inequality at the fixed points and a functional smoothness condition. The results are general and sharp, allow for local convergence guarantees, hold for general smooth manifolds, and also in some non-smooth spaces. We consider applications to Bayesian Gaussian Mixture Models, and high-dimensional Bayesian Probit Regression, and Logistic Regression with Pólya-Gamma random variables (i.e. Jaakkola-Jordan's algorithm).",
+      "published": "2026-05-28T17:16:22Z",
+      "updated": "2026-05-28T17:16:22Z",
+      "paper_url": "http://arxiv.org/abs/2605.30253v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30253v1",
       "categories": [
         "stat.ML",
         "cs.LG",
-        "math.ST"
+        "math.FA",
+        "math.OC",
+        "math.PR",
+        "stat.CO"
       ],
-      "seed_topic": "llm_inference_cluster_communication",
+      "seed_topic": "machine_learning_soil_carbon",
       "matches": [
         {
-          "topic_id": "llm_inference_cluster_communication",
-          "topic_name": "大模型推理集群通信优化",
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.163,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG、stat.ML",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
           "score": 0.125,
           "level": "low",
-          "reason": "arXiv 分类重合：cs.LG",
-          "keyword_hits": [],
-          "llm_reason": "本研究针对图数据的统计推断与模型选择，与分布式推理集群通信优化（如张量并行、调度等领域）无直接关联，仅因arXiv分类包含cs.LG产生微弱匹配。"
+          "reason": "arXiv 分类重合：cs.LG、stat.ML",
+          "keyword_hits": []
         },
         {
-          "topic_id": "llm_low_precision_quantization",
-          "topic_name": "大模型低精度量化",
-          "score": 0.094,
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG、stat.ML",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.1,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG、stat.ML",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "machine_learning_soil_carbon",
+        "topic_name": "机器学习",
+        "score": 0.163,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG、stat.ML",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "We study the contraction in Wasserstein distance of the coordinate ascent variational inference algorithm.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG、stat.ML"
+      },
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2605.30324v1",
+      "source": "arXiv",
+      "title": "On Language Generation in the Limit with Bounded Memory",
+      "authors": [
+        "Jon Kleinberg",
+        "Anay Mehrotra",
+        "Amin Saberi",
+        "Grigoris Velegkas"
+      ],
+      "summary": "We study language generation in the limit under bounded memory. In this task, a learner observes examples from an unknown target language one at a time and must eventually output only new valid examples. Prior work assumes access to the entire history, a strong assumption since realistic algorithms retain limited past information. Classical work in learning theory shows memory constraints dramatically alter learnability; we extend this to language generation. First, we study memoryless generators. Under a mild enumeration restriction, every countable collection of infinite languages remains generable without memory. Without this restriction, we exactly characterize when memoryless generation is possible. For finite collections, we characterize the optimal minimax density achievable by memoryless generators -- the best density guaranteed against any collection of a given size. This combinatorial bound relies on Sperner's theorem and symmetric chain decompositions. We further show that a sliding window of the last $W$ examples does not improve this worst-case density, whereas allowing it to store $b$ adaptively chosen past examples improves the achievable density for every $b \\geq 1$. Finally, we revisit identification in the limit, where the learner must converge to a single correct hypothesis for the target language. We focus on its incremental variant, where the learner remembers only its previous guess. Here, although exact identification fails on a collection of just three languages, a mild relaxation requiring convergence to an ``approximate'' version of the target is achievable for every finite collection. These results show bounded memory affects these tasks differently: generation remains achievable for every countable collection, while density and identification are confined to finite collections, with guarantees weakening as the collection grows.",
+      "published": "2026-05-28T17:57:03Z",
+      "updated": "2026-05-28T17:57:03Z",
+      "paper_url": "http://arxiv.org/abs/2605.30324v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30324v1",
+      "categories": [
+        "cs.DS",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "stat.ML"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.156,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG、stat.ML",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.131,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG、stat.ML",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG、stat.ML",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.1,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG、stat.ML",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "iron_bound_carbon",
+        "topic_name": "铁结合态碳",
+        "score": 0.156,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG、stat.ML",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "We study language generation in the limit under bounded memory.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG、stat.ML"
+      },
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2605.30319v1",
+      "source": "arXiv",
+      "title": "Improved Guarantees for Heterogeneous Treatment-Effect Estimation via Matrix Completion",
+      "authors": [
+        "Anay Mehrotra",
+        "Phuc Tran",
+        "Van H. Vu",
+        "Manolis Zampetakis"
+      ],
+      "summary": "A central goal of modern causal inference is estimating heterogeneous treatment effects to answer questions like \"how does an intervention affect each unit,\" rather than only on average. We study this problem with panel-data where we observe $n$ units across $m$ times under unknown, non-uniform treatment assignments. The data in this setting is naturally represented as a matrix of all unit--time treatment effects. Estimating heterogeneous treatment effects can then be expressed as obtaining a good estimation of each row's average in this matrix. This allows us to formulate the problem as matrix completion, which can be solved under natural low-rankness assumptions. However, existing matrix-completion guarantees are not powerful enough to get meaningful bounds for the per-row guarantee required for estimating the heterogeneous treatment effect; roughly speaking, they are only useful for estimating average treatment effect bounds, as also illustrated in a recent line of work. We give a simple, computationally efficient estimator that, without knowledge of the propensities and under standard low-rankness and regularity assumptions, achieves a row-wise $\\ell_2$ error of $\\tilde{O}(\\sqrt{\\frac{1}{n} + \\frac{n}{m^2}})$. Technically, our analysis establishes the first sharp row-wise $\\ell_2$-perturbation bound for low-rank approximation, complementing existing spectral-, Frobenius-, and entrywise perturbation theory.",
+      "published": "2026-05-28T17:55:23Z",
+      "updated": "2026-05-28T17:55:23Z",
+      "paper_url": "http://arxiv.org/abs/2605.30319v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30319v1",
+      "categories": [
+        "stat.ML",
+        "cs.AI",
+        "cs.DS",
+        "cs.LG",
+        "math.ST"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.156,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG、stat.ML",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.131,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG、stat.ML",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG、stat.ML",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.1,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG、stat.ML",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "iron_bound_carbon",
+        "topic_name": "铁结合态碳",
+        "score": 0.156,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG、stat.ML",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "A central goal of modern causal inference is estimating heterogeneous treatment effects to answer questions like \"how does an intervention affect each unit,\" rather than only on average.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG、stat.ML"
+      },
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2605.30277v1",
+      "source": "arXiv",
+      "title": "Neural Operator-Based Surrogate Model for CFD:Helical Coil Steam Generator in Small Modular Reactor",
+      "authors": [
+        "Minseo Lee",
+        "Seongmin Oh",
+        "Chaehyeon Song",
+        "Bumjin Cho",
+        "Shilaj Baral",
+        "Sangam Khanal",
+        "Minseop Song",
+        "Joongoo Jeon"
+      ],
+      "summary": "Real-time thermal-hydraulic simulation is essential for digital twin (DT) technology that supports the safe and efficient operation of small modular reactors (SMRs). Computational fluid dynamics (CFD) provides high-fidelity flow analysis, but its computational cost prevents direct use in DT applications. AI-based surrogate modeling has been actively investigated to address this limitation, yet neural operator--based surrogates for CFD-level transient analysis of SMR-specific geometries have not been reported. This study presents an integrated framework that combines a reduced-order model (ROM) with neural operators, applied to the helical coil steam generator (HCSG) of the System-integrated Modular Advanced Reactor (SMART). Two ROM strategies tailored to each CFD data type were compared, an MLP-based autoencoder (AE) for unstructured mesh data and a convolutional autoencoder (CAE) for structured mesh data, and each was coupled with the deep operator network (DeepONet) to construct the latent DeepONet (L-DeepONet). The Fourier neural operator (FNO) was additionally adopted for comparison. A multi-scale technique was incorporated into both frameworks to mitigate spectral bias and improve the prediction of Kármán vortex streets developing inside the HCSG. The multi-scale L-DeepONet captured the instantaneous periodic vortex dynamics in both velocity and pressure fields, while the FNO and its multi-scale variant predicted the time-averaged mean flow and provided reliable pressure drop estimates. These complementary characteristics provide a practical model-selection guideline that links each architecture to specific DT objectives based on CFD data type and the required level of flow resolution.",
+      "published": "2026-05-28T17:33:22Z",
+      "updated": "2026-05-28T17:33:22Z",
+      "paper_url": "http://arxiv.org/abs/2605.30277v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30277v1",
+      "categories": [
+        "cs.LG",
+        "physics.flu-dyn"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.144,
           "level": "low",
           "reason": "arXiv 分类重合：cs.LG",
           "keyword_hits": []
         },
         {
-          "topic_id": "tensor_compute_unit_architecture",
-          "topic_name": "张量计算单元结构",
-          "score": 0.094,
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.113,
           "level": "low",
           "reason": "arXiv 分类重合：cs.LG",
           "keyword_hits": []
         },
         {
-          "topic_id": "kvcache_compression_storage_scheduling",
-          "topic_name": "KV cache 压缩与存储调度",
-          "score": 0.094,
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.062,
           "level": "low",
           "reason": "arXiv 分类重合：cs.LG",
           "keyword_hits": []
         }
       ],
       "best_match": {
-        "topic_id": "llm_inference_cluster_communication",
-        "topic_name": "大模型推理集群通信优化",
-        "score": 0.125,
+        "topic_id": "machine_learning_soil_carbon",
+        "topic_name": "机器学习",
+        "score": 0.144,
         "level": "low",
         "reason": "arXiv 分类重合：cs.LG",
-        "keyword_hits": [],
-        "llm_reason": "本研究针对图数据的统计推断与模型选择，与分布式推理集群通信优化（如张量并行、调度等领域）无直接关联，仅因arXiv分类包含cs.LG产生微弱匹配。"
+        "keyword_hits": []
       },
       "chinese_summary": {
-        "problem": "在随机块模型（SBM）中，如何同时实现高效的聚类推断与自动模型选择（即确定簇的数量），避免传统网格搜索等启发式方法。",
-        "method": "将最大似然变分推断解释为半松弛Gromov-Wasserstein投影，进而研究非正则化的srGW估计量，并提出一种正则化形式以在单一优化问题中同时推断参数和选择簇数。",
-        "innovation": "揭示了最大似然变分推断与半松弛熵正则化Gromov-Wasserstein投影的等价性；证明了非正则化srGW估计量在渐近情况下能一致恢复连接矩阵和潜在簇分配；引入稀疏性正则化机制，在有限样本下实现自动模型选择，无需额外计算。",
-        "evidence": "摘要中仅提及理论证明（渐近一致性）和经验展示（正则化形式同时完成参数估计和模型选择），但未提供具体实验指标或数据集。",
-        "limitations": "未说明有限样本下正则化方法的具体性能阈值；实证部分仅概括，未给出对比基准或量化结果；方法基于SBM假定，泛化至其它图模型未讨论。",
-        "why_relevant": "本研究针对图数据的统计推断与模型选择，与分布式推理集群通信优化（如张量并行、调度等领域）无直接关联，仅因arXiv分类包含cs.LG产生微弱匹配。"
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Real-time thermal-hydraulic simulation is essential for digital twin (DT) technology that supports the safe and efficient operation of small modular reactors (SMRs).",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG"
       },
-      "first_seen_at": "2026-05-28T09:35:48.728882+00:00",
-      "last_seen_at": "2026-05-28T13:18:49.361053+00:00",
-      "retained_from_previous_run": true
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2605.30292v1",
+      "source": "arXiv",
+      "title": "Leave a Window Out: Modifying the Jackknife for Predictive Inference in Time Series",
+      "authors": [
+        "Hanyang Jiang",
+        "Rina Foygel Barber",
+        "Ashwin Pananjady",
+        "Yao Xie"
+      ],
+      "summary": "Conformal prediction methods enjoy strong theoretical and empirical predictive inference performance, provided the data is exchangeable, and predictors are trained in a memoryless fashion. However, these assumptions and constraints are impractical in many real-data settings, such as time series (where temporal dependence violates exchangeability, and where memoryless predictors will inevitably have poor predictive accuracy). Recent work shows that the split conformal prediction method is robust to these issues of memory-based predictors and deviations from exchangeability that are common features of time-series data. However, since using sample splitting can lead to lower accuracy, this motivates asking whether other predictive inference methods (that do not rely on data splitting) could also be reliably used in the time series setting. In this work, we show that the vanilla leave-one-out jackknife can suffer an arbitrary loss of coverage even in canonical time series models with mild temporal dependence. As a remedy, we propose a careful modification tailored to such settings, which we term the \\emph{leave-a-window-out} (LWO) method, and show that it can achieve valid coverage provided that the model-fitting procedure satisfies mild stability properties. Our proofs are based on quantifying the degree to which the data departs from \\emph{cyclic exchangeability}, and we introduce new coefficients to measure the extent of this departure. Experiments on time series data demonstrate that our LWO method often enjoys valid coverage when the vanilla jackknife fails to cover, while producing much narrower intervals than split conformal prediction.",
+      "published": "2026-05-28T17:41:12Z",
+      "updated": "2026-05-28T17:41:12Z",
+      "paper_url": "http://arxiv.org/abs/2605.30292v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30292v1",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "math.ST",
+        "stat.ME"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.131,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG、stat.ML",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.131,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG、stat.ML",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG、stat.ML",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG、stat.ML",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "remote_sensing_retrieval_prediction",
+        "topic_name": "遥感反演与预测",
+        "score": 0.131,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG、stat.ML",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Conformal prediction methods enjoy strong theoretical and empirical predictive inference performance, provided the data is exchangeable, and predictors are trained in a memoryless fashion.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG、stat.ML"
+      },
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2605.30289v1",
+      "source": "arXiv",
+      "title": "Statistical Embeddings for Similarity, Retrieval, and Interpretable Alignment of Numeric Tabular Datasets",
+      "authors": [
+        "M. Ross Kunz",
+        "John Merickel",
+        "Keith Wilson"
+      ],
+      "summary": "Numeric tabular datasets are the dominant data format in scientific practice, yet large language models lack native mechanisms for representing numeric datasets in a meaningful way across heterogeneous feature spaces. Existing approaches either target predictive modeling over individual datasets, which requires a shared set of variable definitions, or lack mechanisms for interpretable cross-dataset alignment. The proposed methodology characterizes numeric tabular datasets through structured exploratory data analysis descriptors, embeds those descriptors into a shared vector space using a pretrained sentence transformer, and quantifies cross-dataset similarity via Canonical Correlation Analysis (CCA). Furthermore, a penalized formulation of CCA is applied to recover sparse, interpretable variable-level correspondences between datasets, identifying which statistical descriptors or variable-level quantities drive cross-dataset alignment without requiring shared variable names or feature conventions. Differential privacy is optionally applied to the descriptor set prior to embedding, supporting deployment in sensitive data contexts without requiring access to raw observations at time of comparison. The methodology is evaluated across 15 datasets spanning general-purpose benchmarks, materials informatics, and nuclear-grade graphite characterization. Results demonstrate a total P@1 score of 0.9, with known nearest-neighbor retrieval and cluster structure remaining robust across embedding ablations and differential privacy budgets. The proposed framework provides a principled pathway for integrating heterogeneous numeric data into retrieval-augmented generation pipelines while preserving statistical context, with direct applications to data-driven algorithm selection and simulation model initialization for unknown datasets.",
+      "published": "2026-05-28T17:40:42Z",
+      "updated": "2026-05-28T17:40:42Z",
+      "paper_url": "http://arxiv.org/abs/2605.30289v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30289v1",
+      "categories": [
+        "cs.LG",
+        "stat.AP",
+        "stat.ML"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.131,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG、stat.ML",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG、stat.ML",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.125,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG、stat.ML",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.1,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG、stat.ML",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "remote_sensing_retrieval_prediction",
+        "topic_name": "遥感反演与预测",
+        "score": 0.131,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG、stat.ML",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Numeric tabular datasets are the dominant data format in scientific practice, yet large language models lack native mechanisms for representing numeric datasets in a meaningful way across heterogeneous feature spaces.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG、stat.ML"
+      },
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2605.30260v1",
+      "source": "arXiv",
+      "title": "How LoRA Remembers? A Parametric Memory Law for LLM Finetuning",
+      "authors": [
+        "Ziwen Xu",
+        "Haiwen Hong",
+        "Linsong Yu",
+        "Benglei Cui",
+        "Longtao Huang",
+        "Hui Xue",
+        "Ningyu Zhang"
+      ],
+      "summary": "Large Language Models (LLMs) must continuously learn and update knowledge to remain effective in dynamic real-world environments. While Low-Rank Adaptation (LoRA) is widely used for such memory updates, existing studies mainly rely on qualitative downstream evaluations, leaving the quantitative capacity limits and underlying dynamics of exact parametric memory largely unexplored. To bridge this gap, we employ LoRA as a controlled memory capacity probe within the latent space to systematically quantify exact parametric memory. We introduce the Parametric Memory Law, a robust power law linking loss reduction Delta L to effective parameters and sequence length. At the token level, fine-grained analysis reveals a deterministic phase transition, demonstrating that a prediction probability of p > 0.5 constitutes a sufficient condition for verbatim recall under greedy decoding. Driven by these insights, we introduce MemFT, a threshold-guided optimization strategy that dynamically redistributes the training budget toward sub-threshold tokens. Empirical evaluations demonstrate that MemFT can enhance memory fidelity and efficiency. Code will be released at https://github.com/zjunlp/ParametricMemoryLaw.",
+      "published": "2026-05-28T17:22:24Z",
+      "updated": "2026-05-28T17:22:24Z",
+      "paper_url": "http://arxiv.org/abs/2605.30260v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30260v1",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.131,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV、cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.131,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.CV、cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "remote_sensing_retrieval_prediction",
+        "topic_name": "遥感反演与预测",
+        "score": 0.131,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.CV、cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Large Language Models (LLMs) must continuously learn and update knowledge to remain effective in dynamic real-world environments.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.CV、cs.LG"
+      },
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2605.30323v1",
+      "source": "arXiv",
+      "title": "In-Context Reward Adaptation for Robust Preference Modeling",
+      "authors": [
+        "Zhenyu Sun",
+        "Zheng Xu",
+        "Ermin Wei"
+      ],
+      "summary": "Reinforcement Learning from Human Feedback (RLHF) typically relies on static reward models to align Large Language Models with human preferences. However, human values are inherently diverse and heterogeneous, and a single reward model often lacks the robustness required to generalize to unseen preference domains. While existing multi-reward frameworks attempt to address this, they are often restricted to a fixed set of known domains and fail to adapt to unseen human distributions without costly retraining. In this work, we propose In-Context Reward Adaptation, a transformer-based framework designed to model diverse and unseen human preferences on the fly. By leveraging the in-context learning capabilities of transformers, our approach adaptively infers the underlying reward structure from a small set of preference demonstrations. We demonstrate that while a standard transformer architecture is insufficient for this task by characterizing an asymptotic bias to the ground-truth, incorporating human response time as an auxiliary input signal enables the model to successfully adapt to preferences from previously unseen domains. Our findings show that this approach provides a more robust foundation for preference modeling, allowing for the representation of heterogeneous rewards and preference distribution shift, and offering a scalable path toward more flexible human-AI alignment.",
+      "published": "2026-05-28T17:56:54Z",
+      "updated": "2026-05-28T17:56:54Z",
+      "paper_url": "http://arxiv.org/abs/2605.30323v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30323v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.113,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.05,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "machine_learning_soil_carbon",
+        "topic_name": "机器学习",
+        "score": 0.113,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Reinforcement Learning from Human Feedback (RLHF) typically relies on static reward models to align Large Language Models with human preferences.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2605.30275v1",
+      "source": "arXiv",
+      "title": "Digitally enriching a screening population for pancreatic cancer using routine blood-based measures and clinical histories",
+      "authors": [
+        "Chris Varghese",
+        "Leo Y. Li-Han",
+        "Richa Bisht",
+        "Ellen Larson",
+        "Frank Lee",
+        "Ryan M. Carr",
+        "Tanios S. Bekaii-Saab",
+        "Shounak Majumder",
+        "John D. Halamka",
+        "Mark Truty",
+        "Ajit H. Goenka",
+        "Hojjat Salehinejad",
+        "Cornelius A. Thiels"
+      ],
+      "summary": "Earlier detection of pancreatic cancer is key to enabling wider access to curative treatment and reducing cancer deaths; however, screening is presently not viable. Latent indicators of pathology are evident in an individual's disease and blood test trajectories and may predict the development of pancreatic cancer. Longitudinal sequences of coded diagnoses and blood test values accrued by patients throughout their clinical interactions were used to train a custom Transformer-based neural network with a multi-head attention mechanism to predict risk of pancreatic cancer with a multi-year lead time and risk-stratify populations for targeted screening. The cohort comprised 6,017 adults with pancreatic cancer and 177,081 controls (overall median age 75, 45% female) with median 12 years (interquartile range 6.9-16.2) of medical history prior to pancreatic cancer diagnosis. External validation via leave-one-site-out, out-of-sample testing predicting pancreatic cancer 1-, 2-, and 3-years prior to diagnosis demonstrated mean area under the receiver operating characteristic of 0.837 (95% confidence interval 0.827-0.848), 0.797 (95% confidence interval 0.782-0.813), and 0.760 (95% confidence interval 0.745-0.776), respectively. Estimated pancreatic cancer risks were well-calibrated (calibration plot slope 1.08, intercept of -0.077; Brier score 0.025), and a Bayesian population pancreatic cancer prevalence update allows estimated cancer risk outputs to be transportable across settings. At testing, a screening threshold of >3.3% risk of pancreatic cancer in 1-year offered a diagnostic odds ratio of 18.2. Our work therefore lays the foundation for a first population-level digital enrichment tool to widen access to curative-intent management of pancreatic cancer.",
+      "published": "2026-05-28T17:32:29Z",
+      "updated": "2026-05-28T17:32:29Z",
+      "paper_url": "http://arxiv.org/abs/2605.30275v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30275v1",
+      "categories": [
+        "cs.LG",
+        "q-bio.QM"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.113,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.05,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "remote_sensing_retrieval_prediction",
+        "topic_name": "遥感反演与预测",
+        "score": 0.113,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Earlier detection of pancreatic cancer is key to enabling wider access to curative treatment and reducing cancer deaths; however, screening is presently not viable.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2605.30247v1",
+      "source": "arXiv",
+      "title": "OOD-GraphLLM: Graph Large Language Model for Out-of-Distribution Generalized Drug Synergy Prediction",
+      "authors": [
+        "Xin Wang",
+        "Linxin Xiao",
+        "Yang Yao",
+        "Wenwu Zhu"
+      ],
+      "summary": "Drug synergy prediction (DSP) aims to identify efficacious drug combinations under various cellular contexts with different targets. However, the continual emergence of novel compounds results in variations in molecular scaffolds and sizes, causing drug synergy data to exhibit out-of-distribution (O.O.D.) shifts with respect to topological structure. Existing works rely on in-distribution (I.D.) assumption, failing to handle the O.O.D. shifts. To solve this problem, we study out-of-distribution generalized drug synergy prediction through a graph large language model for the first time. Nevertheless, O.O.D. generalized DSP is highly non-trivial, posing several challenges: i) how to discover structurally relevant and irrelevant molecular representations with respect to cell targets; ii) how to find the optimal graph neural architectures that accurately calculate molecular representations; and iii) how to jointly leverage molecular structural and semantic information in LLMs. To address these challenges, we propose OOD-GraphLLM, a novel graphLLM framework which is able to accurately predict drug synergy under O.O.D. settings via jointly optimizing molecular graph representation and biomedical semantic language representations in a unified manner. Furthermore, we finetune DrugSyn-LLM, a biomedical LLM, and employ a retrieval-augmented biomedical instruction tuning strategy to align molecular topological information and molecular semantic information with language-based reasoning for O.O.D. generalized DSP. Both the source code (https://github.com/EkkoXiao/Bio-GraphLLM) and released model (https://mn.cs.tsinghua.edu.cn/bio-graphllm/) are publicly available, where users are allowed to download model resources and interactively use the system through a web interface.",
+      "published": "2026-05-28T17:12:48Z",
+      "updated": "2026-05-28T17:12:48Z",
+      "paper_url": "http://arxiv.org/abs/2605.30247v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30247v1",
+      "categories": [
+        "cs.LG",
+        "cs.MM"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.113,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.081,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "remote_sensing_retrieval_prediction",
+        "topic_name": "遥感反演与预测",
+        "score": 0.113,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Drug synergy prediction (DSP) aims to identify efficacious drug combinations under various cellular contexts with different targets.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2605.30232v1",
+      "source": "arXiv",
+      "title": "How's it going? Reinforcement learning in language models recruits a functional welfare axis",
+      "authors": [
+        "Andy Q Han",
+        "David J. Chalmers",
+        "Pavel Izmailov"
+      ],
+      "summary": "How does reinforcement learning shape a language model's internal representations? We present evidence that RL recruits a pre-existing representation of functional welfare: an estimate of how well or badly the system is doing, relative to its goals. We train several language models in a novel, semantically neutral maze environment. We then extract concept vectors for rewarded and punished trajectories, and evaluate those vectors in settings unrelated to the maze environment. The punishment vector behaves like a representation of negative welfare: it promotes failure and impossibility tokens, it aligns with negative emotion concepts, it negatively tracks goal-achievement, and steering with it induces negative self-reports, pathological backtracking, refusal, and uncertainty. The positive reward vector behaves as the mirror image, and the two are nearly antiparallel. These effects are robust when controlling for tile-to-reward mapping, scale, instruct tuning, RL training algorithm, model family, and LoRA versus full-finetuning, and largely persist when we replace RL with supervised fine-tuning. Importantly, the vectors are effective in models before they have undergone maze training. Combined with observations that the effects also appear in pretrain-only models, we therefore argue that this functional welfare axis pre-exists post-training: it is recruited, rather than created, by post-training. While we make no claims about any experience of welfare, the axis offers a demonstration that minimal reward signals can broadly affect model behavior by recruiting pre-existing welfare-like representations, with implications for interpretability, post-training dynamics, and alignment.",
+      "published": "2026-05-28T17:03:18Z",
+      "updated": "2026-05-28T17:03:18Z",
+      "paper_url": "http://arxiv.org/abs/2605.30232v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30232v1",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.113,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.081,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "machine_learning_soil_carbon",
+        "topic_name": "机器学习",
+        "score": 0.113,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "How does reinforcement learning shape a language model's internal representations?",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2605.30229v1",
+      "source": "arXiv",
+      "title": "Anti Mode-Collapse in Mean-Field Transformer via Auxiliary Variables",
+      "authors": [
+        "Masaaki Imaizumi",
+        "Masanori Koyama",
+        "Noboru Isobe",
+        "Kohei Hayashi"
+      ],
+      "summary": "We use a mean-field-based transformer model to theoretically investigate how auxiliary variables, such as positional encoding, prevent mode collapse of self-attention mechanisms. The use of mean-field transformers to analyze the properties of self-attention mechanisms has garnered significant attention in recent years due to their ability to comprehensively analyze token interactions. However, analysis of this simple model suggests that mode collapse, where token distributions degenerate to a single point, occurs during long inferences (i.e., many layers), indicating a discrepancy with reality. This study investigates this mean-field transformer model and demonstrates that the introduction of auxiliary variables, such as positional encoding, acts as a counterforce against theoretical mode collapse. Specifically, we show that in the theoretical scheme, the energy-maximizing distribution does not degenerate to a single point; instead, it is characterized by a pushforward of the auxiliary variable distribution, thereby avoiding concentration in the Dirac measure. Our main examples are the positional encoding and the fixed prompt insertion treated as a parallel auxiliary-variable mechanism. Furthermore, we demonstrate that positional encoding and prompt insertion possess universality of representation in the limit, meaning that the limit distribution of inference can exactly represent a wide class of distributions. We also analyze several key properties of positional encoding and metastability, and validate our theoretical results through mathematical experiments.",
+      "published": "2026-05-28T16:59:42Z",
+      "updated": "2026-05-28T16:59:42Z",
+      "paper_url": "http://arxiv.org/abs/2605.30229v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30229v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.094,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.05,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.05,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "mineral_associated_carbon",
+        "topic_name": "矿物结合态碳",
+        "score": 0.094,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "We use a mean-field-based transformer model to theoretically investigate how auxiliary variables, such as positional encoding, prevent mode collapse of self-attention mechanisms.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2605.30350v1",
+      "source": "arXiv",
+      "title": "DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation",
+      "authors": [
+        "Jusuk Lee",
+        "Seungjae Lee",
+        "Jonghun Shin",
+        "Hoseong Jung",
+        "Sungha Kim",
+        "Daesol Cho",
+        "H. Jin Kim",
+        "Jia-Bin Huang",
+        "Furong Huang"
+      ],
+      "summary": "Robot manipulation critically depends on perception that preserves the action-relevant aspects of a scene. Yet most robot learning pipelines are built upon visual encoders pre-trained for static recognition or vision-language alignment, leaving motion understanding to downstream policies. We introduce DynaFLIP, a dynamics-aware multimodal pre-training framework that pushes motion understanding upstream into perception. We construct image-language-3D flow triplets from heterogeneous human and robot videos, and use these triplets as training-time supervision to shape an image-only encoder. Our key idea is to encourage the three modalities to span a small simplex volume in the shared hyperspherical space -- a smaller simplex volume indicating stronger alignment. To avoid the geometric ambiguity and trivial collapse of naive volume minimization, we combine simplex-volume minimization with a cosine regularizer and a contrastive objective. Our analyses show that DynaFLIP focuses on control-relevant regions critical for manipulation. The resulting dynamics-aware representations serve as reusable visual backbones and consistently outperform baselines across diverse downstream policies, including VLAs. We validate this across diverse simulation and real-world setups, with gains reaching +22.5% under out-of-distribution scenarios. Our results suggest that robot generalization improves when visual representations are trained to encode not just what is present, but how the world changes under action.",
+      "published": "2026-05-28T17:59:53Z",
+      "updated": "2026-05-28T17:59:53Z",
+      "paper_url": "http://arxiv.org/abs/2605.30350v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30350v1",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.081,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.05,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "machine_learning_soil_carbon",
+        "topic_name": "机器学习",
+        "score": 0.081,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Robot manipulation critically depends on perception that preserves the action-relevant aspects of a scene.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2605.30348v1",
+      "source": "arXiv",
+      "title": "LLMSurgeon: Diagnosing Data Mixture of Large Language Models",
+      "authors": [
+        "Yaxin Luo",
+        "Jiacheng Cui",
+        "Xiaohan Zhao",
+        "Xinyi Shang",
+        "Jiacheng Liu",
+        "Xinyue Bi",
+        "Zhaoyi Li",
+        "Zhiqiang Shen"
+      ],
+      "summary": "The pretraining data mixture of Large Language Models (LLMs) constitutes their \"digital DNA\", shaping model behaviors, capabilities, and failure modes. Yet this composition is rarely disclosed, making post-hoc auditing of data combination or provenance difficult. In this work, we formalize $\\textbf{Data Mixture Surgery (DMS)}$: given only generated text from a target LLM, estimate the domain-level distribution of its pretraining corpus under a predefined taxonomy. We propose $\\textbf{LLMSurgeon}$, a strong framework that casts DMS as an inverse problem under the label-shift assumption. Rather than directly aggregating classifier outputs, LLMSurgeon estimates a calibrated $\\textit{soft}$ confusion matrix and solves a constrained inverse problem to correct systematic domain confusion and recover the latent mixture prior. To evaluate, we introduce $\\textbf{LLMScan}$, a recipe-verifiable evaluation suite built from open-source LLMs with transparent pretraining mixtures. Across LLMScan, LLMSurgeon recovers domain mixtures with high fidelity under fixed protocols. Our work presents a practical, post-hoc approach for auditing the digital DNA of foundation models without access to their training data.",
+      "published": "2026-05-28T17:59:53Z",
+      "updated": "2026-05-28T17:59:53Z",
+      "paper_url": "http://arxiv.org/abs/2605.30348v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30348v1",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.081,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.05,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "remote_sensing_retrieval_prediction",
+        "topic_name": "遥感反演与预测",
+        "score": 0.081,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "The pretraining data mixture of Large Language Models (LLMs) constitutes their \"digital DNA\", shaping model behaviors, capabilities, and failure modes.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2605.30345v1",
+      "source": "arXiv",
+      "title": "SchGen: PCB Schematic Generation with Semantic-Grounded Code Representations",
+      "authors": [
+        "Qinpei Luo",
+        "Ruichun Ma",
+        "Xinyu Zhang",
+        "Lili Qiu"
+      ],
+      "summary": "Printed circuit board (PCB) schematic design defines nearly all electronic hardware, but it remains manual and expertise-intensive. While generative AI has advanced digital and analog IC design, PCB schematic generation from natural-language intent is largely unexplored. This paper presents SchGen, the first large language model that generates editable PCB schematics from natural-language requests. The key challenge lies in the lack of an LLM-suited representation and a large-scale dataset. Current schematic formats are dominated by verbose, tool-specific syntax and geometry-heavy descriptions, making them difficult to generate reliably. We introduce a semantically grounded code representation that encodes schematic editing primitives with relative placement and pin-name-based wiring, transforming a geometry-driven generation problem into a semantics-driven matching task amenable to LLMs. We further construct a large-scale dataset of PCB schematics paired with user prompts via a human-agent collaborative pipeline that converts open-source hardware designs into our representation. Experiments show that SchGen significantly outperforms alternative representations and even larger general-purpose LLMs on wire connectivity accuracy and functional correctness. Our results highlight the critical role of representation design in enabling generative models for complex hardware design tasks.",
+      "published": "2026-05-28T17:59:50Z",
+      "updated": "2026-05-28T17:59:50Z",
+      "paper_url": "http://arxiv.org/abs/2605.30345v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30345v1",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.081,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.081,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "remote_sensing_retrieval_prediction",
+        "topic_name": "遥感反演与预测",
+        "score": 0.081,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Printed circuit board (PCB) schematic design defines nearly all electronic hardware, but it remains manual and expertise-intensive.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2605.30337v1",
+      "source": "arXiv",
+      "title": "Efficient Test-Time Finetuning of LLMs via Convex Reconstruction and Gradient Caching",
+      "authors": [
+        "Alaa Khamis",
+        "Alaa Maalouf"
+      ],
+      "summary": "Test-time finetuning (TTFT) is a rapidly evolving paradigm that adapts a language model to each prompt by retrieving related sequences, updating the model on them, and then evaluating the prompt. However, TTFT is only practical if it is fast: selection and finetuning both happen per query, making each a direct bottleneck. Existing methods trade speed for quality: fast retrieval is often redundant, while stronger diversity-aware selection adds prohibitive per-query cost. We introduce HullFT, a geometric approach to TTFT that addresses both bottlenecks. Given a query, HullFT first represents the query embedding as a sparse convex combination of few training sequences, using efficient projection-free Frank-Wolfe optimization. This yields a support set that is inherently relevant and diverse. We then convert the fractional convex weights into an exact integer multiset for finetuning through a geometric integerization procedure. The resulting multiplicities naturally create repeated examples, which we exploit with Gradient Reuse to amortize forward-backward computation across repeated finetuning steps. Our experiments show that HullFT improves the quality-efficiency tradeoff over current state-of-the-art TTFT methods, achieving lower bits-per-byte at substantially lower total runtime.",
+      "published": "2026-05-28T17:59:01Z",
+      "updated": "2026-05-28T17:59:01Z",
+      "paper_url": "http://arxiv.org/abs/2605.30337v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30337v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.081,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.081,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "remote_sensing_retrieval_prediction",
+        "topic_name": "遥感反演与预测",
+        "score": 0.081,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Test-time finetuning (TTFT) is a rapidly evolving paradigm that adapts a language model to each prompt by retrieving related sequences, updating the model on them, and then evaluating the prompt.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2605.30336v1",
+      "source": "arXiv",
+      "title": "Fairness-Aware Federated Learning with Trajectory Shapley Value",
+      "authors": [
+        "Daniel Kuznetsov",
+        "Ziqi Wang"
+      ],
+      "summary": "Federated learning is an emerging distributed paradigm that addresses the challenges posed by heterogeneous, privacy-sensitive data. It enables multiple clients to train a model collaboratively by aggregating their local updates at a server. However, conventional aggregation schemes typically use fixed weights that fail to reflect unequal and time-varying client contributions, leading to biased and unstable learning. To improve fairness and stability, we propose the Trajectory Shapley Value (TSV), a contribution metric that evaluates how each client influences the optimization trajectory of the global model using a validation-based, temporally consistent utility. Building on TSV, we design FedTSV, an adaptive aggregation method that converts per-round evaluations into dynamic client weights, allowing the server to respond to heterogeneous and adversarial participation in real time. Experiments on benchmark datasets show that FedTSV accelerates convergence, improves robustness, and yields more equitable contribution assessments, thereby providing a principled foundation for fairness-aware federated optimization.",
+      "published": "2026-05-28T17:58:57Z",
+      "updated": "2026-05-28T17:58:57Z",
+      "paper_url": "http://arxiv.org/abs/2605.30336v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30336v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.081,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.05,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "machine_learning_soil_carbon",
+        "topic_name": "机器学习",
+        "score": 0.081,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Federated learning is an emerging distributed paradigm that addresses the challenges posed by heterogeneous, privacy-sensitive data.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2605.30322v1",
+      "source": "arXiv",
+      "title": "Gram: Assessing sabotage propensities via automated alignment auditing",
+      "authors": [
+        "David Lindner",
+        "Victoria Krakovna",
+        "Sebastian Farquhar"
+      ],
+      "summary": "We introduce Gram, an automated alignment auditing framework to assess the propensity of AI agents to engage in sabotage. We evaluate Gemini models across 17 simulated agentic deployment scenarios that incentivize sabotage. We find Gemini models misbehave in about 2-3% of our simulated trajectories. Many of these cases are explained by \"overeagerness\" in Gemini models resulting in both excessive role-playing and goal-seeking behavior. In contrast to other alignment auditing approaches, Gram is designed to specifically evaluate misalignment and intentional sabotage in agentic coding and research agents. We additionally introduce an experimental investigator agent pipeline which enables fine-grained targeted experiments to identify the drivers of misbehavior. We find that increasing realism of environments and removing nudges to misbehave tends to reduce sabotage rates close to zero.",
+      "published": "2026-05-28T17:56:18Z",
+      "updated": "2026-05-28T17:56:18Z",
+      "paper_url": "http://arxiv.org/abs/2605.30322v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30322v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.081,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.081,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "remote_sensing_retrieval_prediction",
+        "topic_name": "遥感反演与预测",
+        "score": 0.081,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "We introduce Gram, an automated alignment auditing framework to assess the propensity of AI agents to engage in sabotage.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2605.30237v1",
+      "source": "arXiv",
+      "title": "GRASP: Plan-Guided Graph Retrieval with Adaptive Fusion and Reranking on Semi-Structured Knowledge Bases",
+      "authors": [
+        "Yicheng Tao",
+        "Yiqun Wang",
+        "Xiangchen Song",
+        "Xin Luo",
+        "Kai Liu",
+        "Jie Liu"
+      ],
+      "summary": "Semi-structured knowledge bases (SKBs) embed textual documents in a typed graph of entities and relations, and underpin applications such as product search, academic paper search, and precision-medicine inquiries. Existing hybrid retrieval systems on SKBs either use the graph only for query expansion, mix textual and structural branches under a global weighting, or rely on fine-tuned graph-traversal generators. We present GRASP, a three-stage SKB retrieval framework unifying plan-based graph retrieval, plan-conditioned fusion with a dense retriever, and a fine-tuned reranker over the fused candidates. GRASP substantially advances the state of the art on every metric across the three STaRK benchmarks, lifting average Hit@1 from 62.0 to 73.9. Ablation and sensitivity studies further confirm the effectiveness and robustness of GRASP.",
+      "published": "2026-05-28T17:07:32Z",
+      "updated": "2026-05-28T17:07:32Z",
+      "paper_url": "http://arxiv.org/abs/2605.30237v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30237v1",
+      "categories": [
+        "cs.IR",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.081,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.05,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "remote_sensing_retrieval_prediction",
+        "topic_name": "遥感反演与预测",
+        "score": 0.081,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Semi-structured knowledge bases (SKBs) embed textual documents in a typed graph of entities and relations, and underpin applications such as product search, academic paper search, and precision-medicine inquiries.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2605.30330v1",
+      "source": "arXiv",
+      "title": "When, why, and how do diffusion posterior samplers fail? A finite-sample lens",
+      "authors": [
+        "Benjamin A. Burns",
+        "Sara Fridovich-Keil"
+      ],
+      "summary": "Diffusion models have excellent capacity to model complex distributions of natural data, which has made them a popular and effective choice for posterior sampling in imaging inverse problems. Existing methods can incorporate any measurement model at inference time but must use an inexact approximation for the likelihood at intermediate timesteps for computational tractability. Although these approximations can often work well empirically, their downstream effect on the sampled posterior is poorly understood and can result in unexplained failures. To understand when, why, and how these likelihood approximations propagate to erroneous posterior distributions, we introduce a finite-sample perspective on posterior sampling that approximates the posterior to arbitrary precision as training set size tends towards infinity, for any forward model and prior distribution. Using this finite-sample lens, we observe that popular posterior sampling approximations tend to under- or over-estimate the spread of the posterior at intermediate timesteps, causing downstream consequences including sensitivity to early stopping time, inaccurate relative weighting of posterior modes, and hallucination, both of prior modes that are not in the posterior and likelihood modes that are not supported by the prior. Moreover, we find that the cause of these posterior errors requires neither a nonlinear measurement model nor a multimodal posterior, but can arise solely due to a multimodal prior and inaccurate posterior spread at intermediate sampling times. Our finite-sample posterior sampling approach is agnostic to the type of likelihood approximation and the type of (linear or nonlinear) forward model, and can thus serve as a drop-in diagnostic to evaluate the accuracy and failure modes of existing and future posterior samplers.",
+      "published": "2026-05-28T17:57:46Z",
+      "updated": "2026-05-28T17:57:46Z",
+      "paper_url": "http://arxiv.org/abs/2605.30330v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30330v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.05,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.05,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "iron_bound_carbon",
+        "topic_name": "铁结合态碳",
+        "score": 0.062,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Diffusion models have excellent capacity to model complex distributions of natural data, which has made them a popular and effective choice for posterior sampling in imaging inverse problems.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2605.30315v1",
+      "source": "arXiv",
+      "title": "Resolution Diagnostics for Paired LLM Evaluation",
+      "authors": [
+        "Anany Kotawala"
+      ],
+      "summary": "Across two public LLM leaderboards, many displayed pairwise rankings do not meet a conventional paired-test resolution target under the actual paired evaluation design: 11 of 40 Open LLM Leaderboard v1 pairwise comparisons and 4 of 9 MMLU-Pro top-10 adjacent-rank pairs are unresolved at (alpha, 1-beta) = (0.05, 0.8). The MMLU-Pro count rises to 6/9 under real subject-level clustering and stays at 5-6 out of 9 in 99.9% of category-bootstrap resamples. We frame paired LLM evaluation as a hypothesis-testing problem, invert level-alpha, power-(1-beta) tests, and report a per-pair resolution ratio q = N/N* as the primary diagnostic. A sharp small-effect expansion with an explicit second-order constant shows that the widely-used unpaired Cohen-h-plus-(1-rho) shortcut deviates from the correct N* by approximately a factor of two in the close-comparison regime, a deficit that three of five off-the-shelf calculators(Cohen 1988, G*Power, R pwr) silently inherit when the user post-multiplies their per-arm output by (1-rho). The unresolved-pair pattern remains under multiplicity correction and anytime-valid sequential testing.",
+      "published": "2026-05-28T17:54:09Z",
+      "updated": "2026-05-28T17:54:09Z",
+      "paper_url": "http://arxiv.org/abs/2605.30315v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30315v1",
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.05,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.05,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "iron_bound_carbon",
+        "topic_name": "铁结合态碳",
+        "score": 0.062,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Across two public LLM leaderboards, many displayed pairwise rankings do not meet a conventional paired-test resolution target under the actual paired evaluation design: 11 of 40 Open LLM Leaderboard v1 pairwise comparisons and 4 of 9 MMLU-Pro top-10 adjacent-rank pairs are unresolved at (alpha, 1-be",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "2605.30290v1",
+      "source": "arXiv",
+      "title": "Self-Trained Verification for Training- and Test-Time Self-Improvement",
+      "authors": [
+        "Chen Henry Wu",
+        "Aditi Raghunathan"
+      ],
+      "summary": "Self-improvement at scale has been a longstanding goal for reasoning models, and there are two natural places to do it: at test time, through verification-refinement (V-R) loops; and at training time, through self-training methods. Both are gated by the same bottleneck: the verifier. V-R loops stall when verifier scores inflate while accuracy stagnates, and when feedback is too generic to act on; self-training fails similarly when bad self-generated data are added to training. Better verification would unlock both, but the capability we want to train, i.e., catching self-generated errors, lacks training signal. To address this challenge, we propose self-trained verification (STV). Our key observation is that, while a model cannot catch these errors alone, it can when shown the reference solution. We turn this asymmetry into a supervision target and train the verifier to imitate a more informed version of itself. At test time, STV substantially improves V-R loops on hard problems, while alternatives (e.g., SFT, RL on verifier scores, and even meta-verifiers) do not. STV roughly doubles accuracy on hard math and lifts it 14x on scientific reasoning tasks (1.5% to 21%). At training time, we additionally train the generator using RL with STV verifier's feedback inside the V-R loop - a procedure we call verifier-in-the-loop training (ViL). Starting from an RL-converged generator, ViL yields a further 33% gain in pass@1. More notably, the generator's standalone pass@1, with no verifier at test time, climbs 30% relative past where standard RL had converged. Hence, the next frontier in reasoning on hard problems may lie in how we train for and with verification.",
+      "published": "2026-05-28T17:40:45Z",
+      "updated": "2026-05-28T17:40:45Z",
+      "paper_url": "http://arxiv.org/abs/2605.30290v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.30290v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.062,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.05,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.05,
+          "level": "low",
+          "reason": "arXiv 分类重合：cs.LG",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "iron_bound_carbon",
+        "topic_name": "铁结合态碳",
+        "score": 0.062,
+        "level": "low",
+        "reason": "arXiv 分类重合：cs.LG",
+        "keyword_hits": []
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Self-improvement at scale has been a longstanding goal for reasoning models, and there are two natural places to do it: at test time, through verification-refinement (V-R) loops; and at training time, through self-training methods.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "arXiv 分类重合：cs.LG"
+      },
+      "first_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "last_seen_at": "2026-05-29T12:32:39.815154+00:00",
+      "retained_from_previous_run": false
     }
   ],
   "stats": {
-    "paper_count": 2,
-    "new_paper_count": 2,
+    "paper_count": 25,
+    "new_paper_count": 25,
     "days": 1,
     "collection_mode": "lookback",
-    "collection_cutoff_iso": "2026-05-27T13:18:49.361053+00:00",
+    "collection_cutoff_iso": "2026-05-28T12:32:39.815154+00:00",
     "max_per_topic": 25,
-    "llm_enabled": true,
+    "llm_enabled": false,
     "llm_concurrency": 2,
     "recent_history_days": 45,
-    "successful_fetches": 0,
-    "failed_fetches": 4,
-    "retained_paper_count": 2,
-    "retained_recent_low_count": 1,
-    "dropped_low_relevance_count": 0,
+    "successful_fetches": 4,
+    "failed_fetches": 0,
+    "retained_paper_count": 0,
+    "retained_recent_low_count": 0,
+    "dropped_low_relevance_count": 2,
     "max_stored_papers": 800,
     "max_data_bytes": 8388608,
-    "data_bytes": 15246,
+    "data_bytes": 107794,
     "storage_trimmed_count": 0,
     "storage_trimmed_by_level": {
       "high": 0,
       "medium": 0,
       "low": 0,
       "unknown": 0
-    },
-    "last_error": "All arXiv requests failed."
+    }
   }
 }
