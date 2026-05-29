@@ -1,6 +1,6 @@
 {
-  "generated_at": "Fri, 29 May 2026 13:18:05 +0000",
-  "generated_at_iso": "2026-05-29T13:18:05.644552+00:00",
+  "generated_at": "Fri, 29 May 2026 14:12:50 +0000",
+  "generated_at_iso": "2026-05-29T14:12:50.386040+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -98,25 +98,2142 @@
       ]
     }
   ],
-  "papers": [],
+  "papers": [
+    {
+      "id": "doi:10.3390/land15050884",
+      "source": "OpenAlex",
+      "title": "Prediction of Surface Soil Organic Carbon in Karst Cropland Based on Multi-Temporal Remote Sensing Data and Stacking Ensemble Method",
+      "authors": [
+        "Kaiping Li",
+        "YJ Li",
+        "Wenxian Wu",
+        "Leping Yang"
+      ],
+      "summary": "Accurate prediction of soil organic carbon (SOC) in cropland is important for food production, sustainable soil management, and carbon sequestration. Although digital soil mapping (DSM) has been widely used in the prediction of SOC, most of the current DSM studies use only a single remote sensing image and a single machine learning (ML) approach, and few studies apply multi-temporal remote sensing images and ensemble methods. This study explores the accuracy of the prediction of surface SOC in cropland by comparing multi-temporal Sentinel-2A remote sensing with random forest (RF), support vector machine (SVM), gradient boosted decision trees (GBDT), extreme gradient boosted decision trees (XGBoost), and a stacking ensemble method consisting of these four ML approaches. The potential of multi-temporal remote sensing data and the stacking ensemble method for SOC prediction is discussed. To this end, 76 sampling points were selected in the study area, soil samples were collected at depths of 0–10 cm and 10–20 cm for each soil profile, and a total of 152 soil samples were obtained. Remote sensing variables extracted from topography, climate, and Sentinel-2A images on 13 January and 31 August 2023 were used as predictor variables. The results showed that the stacking ensemble method with multi-temporal predictor variables outperformed all single models and variable combinations. However, the overall predictive accuracy remained moderate, with the best performance for 0–10 cm (R2 = 0.386, RMSE = 4.782, MAE = 3.36) and 10–20 cm (R2 = 0.425, RMSE = 4.484, MAE = 4.031). The relatively low R2 values, despite the use of advanced methods, highlight the inherent challenges of SOC prediction in highly fragmented karst croplands. This study demonstrates the incremental benefit, rather than a universal high accuracy, of combining multi-temporal Sentinel-2 imagery with a stacking ensemble to improve SOC mapping in such complex environments.",
+      "published": "2026-05-20T00:00:00+00:00",
+      "updated": "2026-05-20T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.3390/land15050884",
+      "pdf_url": "https://doi.org/10.3390/land15050884",
+      "categories": [
+        "Land",
+        "Soil Geostatistics and Mapping",
+        "Remote Sensing in Agriculture",
+        "Soil erosion and sediment transport",
+        "Random forest",
+        "Stacking",
+        "Soil carbon",
+        "Ensemble learning",
+        "Sampling (signal processing)",
+        "Decision tree"
+      ],
+      "seed_topic": "remote_sensing_retrieval_prediction",
+      "matches": [
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.75,
+          "level": "high",
+          "reason": "关键词命中：soil organic carbon machine learning、soil carbon prediction machine learning、digital soil mapping machine learning、remote sensing soil carbon machine learning、soil organic carbon random forest",
+          "keyword_hits": [
+            "soil organic carbon machine learning",
+            "soil carbon prediction machine learning",
+            "digital soil mapping machine learning",
+            "remote sensing soil carbon machine learning",
+            "soil organic carbon random forest"
+          ]
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.63,
+          "level": "medium",
+          "reason": "关键词命中：soil organic carbon remote sensing、soil organic carbon mapping remote sensing、digital soil mapping remote sensing、Sentinel-2 soil organic carbon",
+          "keyword_hits": [
+            "soil organic carbon remote sensing",
+            "soil organic carbon mapping remote sensing",
+            "digital soil mapping remote sensing",
+            "Sentinel-2 soil organic carbon"
+          ]
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.125,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "machine_learning_soil_carbon",
+        "topic_name": "机器学习",
+        "score": 0.75,
+        "level": "high",
+        "reason": "关键词命中：soil organic carbon machine learning、soil carbon prediction machine learning、digital soil mapping machine learning、remote sensing soil carbon machine learning、soil organic carbon random forest",
+        "keyword_hits": [
+          "soil organic carbon machine learning",
+          "soil carbon prediction machine learning",
+          "digital soil mapping machine learning",
+          "remote sensing soil carbon machine learning",
+          "soil organic carbon random forest"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Accurate prediction of soil organic carbon (SOC) in cropland is important for food production, sustainable soil management, and carbon sequestration.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：soil organic carbon machine learning、soil carbon prediction machine learning、digital soil mapping machine learning、remote sensing soil carbon machine learning、soil organic carbon random forest"
+      },
+      "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "last_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "doi:10.3390/su18104943",
+      "source": "OpenAlex",
+      "title": "Towards Spatial Mapping and Local Interpretation of Soil Organic Carbon Contents in a Subtropical Mountainous Region Using Integrated Machine Learning Approaches",
+      "authors": [
+        "Manxuan Mao",
+        "Nannan ZHANG",
+        "Yunfan Li",
+        "X Wang",
+        "Shaowen Xie",
+        "Ting Li",
+        "Shujuan Liu",
+        "Hongyi Zhou",
+        "Haofan Xu"
+      ],
+      "summary": "Understanding the environmental drivers underlying the spatial heterogeneity of soil organic carbon (SOC) in mountainous regions remains a major challenge in digital soil mapping. This study investigated the spatial distribution and driving mechanisms of SOC contents in a typical subtropical mountainous area using an integrated modeling and interpretation framework based on 132 soil samples. The SOC content in Yangshan County ranged from 3.33 to 50.00 g kg−1, with a coefficient of variation of 48.64%, indicating a moderate level of variability across the study area. Six mainstream modeling approaches were compared, including multiple linear regression (MLR), geographically weighted regression (GWR), Cubist, eXtreme Gradient Boosting (XGBoost), random forest (RF), and a hybrid RF-GWR model. The results showed that RF outperformed traditional linear methods and other machine learning approaches, achieving an R2 of 0.45 and RMSE of 7.78 g kg−1, while the hybrid model further improved prediction accuracy (R2 = 0.48). Then, spatial mapping revealed a clear elevational gradient, with higher SOC values concentrated in forested mountainous areas in the north and lower values distributed across low-elevation cultivated and disturbed zones. SHAP analysis identified intrinsic soil properties, particularly total nitrogen (TN) and cation-exchange capacity (CEC), as dominant controls on SOC contents. When extended to prediction datasets, relative humidity (RH) and mean annual precipitation (MAP) showed greater importance on SOC, suggesting an amplification of climatic factors at the broader scale. Subsequently, hotspot analysis of GeoShapley components further revealed the spatial differentiations in group indicators, with overall contributions ranked as soil physicochemical properties (36.4%) &gt; geographic conditions (21.1%) &gt; climate (17.4%) &gt; organisms (12.9%) &gt; parent material (12.1%). Soil properties formed clustered hotspots overlaid on carbonate-dominated areas, while geographic conditions and climate primarily acted as spatial modulators, generating localized zones of intensified or weakened influence across the landscape. The integrated framework proposed in this study has potential applicability across broader regions. These findings provided a scientific basis for the localized interpretation of environmental drivers of SOC and offered valuable support for region-specific land management and sustainable decision-making.",
+      "published": "2026-05-14T00:00:00+00:00",
+      "updated": "2026-05-14T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.3390/su18104943",
+      "pdf_url": "https://doi.org/10.3390/su18104943",
+      "categories": [
+        "Sustainability",
+        "Soil Geostatistics and Mapping",
+        "Soil Carbon and Nitrogen Dynamics",
+        "Geochemistry and Geologic Mapping",
+        "Soil carbon",
+        "Spatial variability",
+        "Random forest",
+        "Digital soil mapping",
+        "Subtropics",
+        "Spatial distribution"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.75,
+          "level": "high",
+          "reason": "关键词命中：soil organic carbon machine learning、soil carbon prediction machine learning、digital soil mapping machine learning、soil organic carbon random forest、soil organic carbon gradient boosting",
+          "keyword_hits": [
+            "soil organic carbon machine learning",
+            "soil carbon prediction machine learning",
+            "digital soil mapping machine learning",
+            "soil organic carbon random forest",
+            "soil organic carbon gradient boosting"
+          ]
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.219,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.125,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "machine_learning_soil_carbon",
+        "topic_name": "机器学习",
+        "score": 0.75,
+        "level": "high",
+        "reason": "关键词命中：soil organic carbon machine learning、soil carbon prediction machine learning、digital soil mapping machine learning、soil organic carbon random forest、soil organic carbon gradient boosting",
+        "keyword_hits": [
+          "soil organic carbon machine learning",
+          "soil carbon prediction machine learning",
+          "digital soil mapping machine learning",
+          "soil organic carbon random forest",
+          "soil organic carbon gradient boosting"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Understanding the environmental drivers underlying the spatial heterogeneity of soil organic carbon (SOC) in mountainous regions remains a major challenge in digital soil mapping.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：soil organic carbon machine learning、soil carbon prediction machine learning、digital soil mapping machine learning、soil organic carbon random forest、soil organic carbon gradient boosting"
+      },
+      "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "last_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "doi:10.1007/s43621-026-03407-2",
+      "source": "OpenAlex",
+      "title": "High resolution mapping of soil organic carbon in northern Nigerian agricultural lands using comparative machine learning with uncertainty analysis",
+      "authors": [
+        "Mustapha Abdulkadir",
+        "Ádám Csorba",
+        "Márta Fuchs",
+        "Tamas Szegi",
+        "Babangida Hammani",
+        "Erika Michéli",
+        "Yuri Andrei Gelsleichter"
+      ],
+      "summary": "Abstract Soil organic carbon (SOC) is a crucial component in soil quality, health, and ecosystem function. Knowledge about its distribution is paramount for sustainable agriculture, food security, soil stabilityand carbon sequestration monitoring, especially in areas like northern Nigeria, where the soils are highly heterogeneous. This study applied machine learning algorithms of random forest, extreme gradient boosting, and categorical boosting to predict and map the spatial distribution of SOC in northern Nigeria at 30 m resolution. We used 181 soil samples collected from the 0–20 cm top layer across agricultural lands; 12 environmental covariates were selected from 22 covariates to fit the models using ten-fold cross-validation. Quantile random forest was used to estimate the associated SOC uncertainties. The result revealed that Random Forest achieved higher prediction accuracy (R2 = 0.43, RMSE = 0.45%, MAE = 0.33%), outperforming XGBoost (R2 = 0.39, RMSE = 0.54%, MAE = 0.37%) and CatBoost (R2 = 0.37, RMSE = 0.49%, MAE = 0.38%). Random forest further indicates that Landsat 9 Band 5 (NIR) is the most critical predictor variable, followed by annual precipitation, elevation, and mean temperature; the predicted SOC map shows a significant variation of SOC, with higher concentration in the southern area and lower in the northern part. The uncertainty estimation shows a broader range of uncertainties in the highly elevated areas. The study suggests that further observations and denser sampling should be carried out, especially in highly elevated areas, to capture more spatial variability.",
+      "published": "2026-05-24T00:00:00+00:00",
+      "updated": "2026-05-24T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.1007/s43621-026-03407-2",
+      "pdf_url": "https://doi.org/10.1007/s43621-026-03407-2",
+      "categories": [
+        "Discover Sustainability",
+        "Soil Geostatistics and Mapping",
+        "Remote Sensing in Agriculture",
+        "Soil Carbon and Nitrogen Dynamics",
+        "Random forest",
+        "Soil carbon",
+        "Quantile",
+        "Mean squared error",
+        "Soil water",
+        "Soil map"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.65,
+          "level": "medium",
+          "reason": "关键词命中：soil organic carbon machine learning、soil carbon prediction machine learning、soil organic carbon random forest、soil organic carbon gradient boosting",
+          "keyword_hits": [
+            "soil organic carbon machine learning",
+            "soil carbon prediction machine learning",
+            "soil organic carbon random forest",
+            "soil organic carbon gradient boosting"
+          ]
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.268,
+          "level": "low",
+          "reason": "关键词命中：Landsat soil organic carbon",
+          "keyword_hits": [
+            "Landsat soil organic carbon"
+          ]
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.156,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.125,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "machine_learning_soil_carbon",
+        "topic_name": "机器学习",
+        "score": 0.65,
+        "level": "medium",
+        "reason": "关键词命中：soil organic carbon machine learning、soil carbon prediction machine learning、soil organic carbon random forest、soil organic carbon gradient boosting",
+        "keyword_hits": [
+          "soil organic carbon machine learning",
+          "soil carbon prediction machine learning",
+          "soil organic carbon random forest",
+          "soil organic carbon gradient boosting"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Abstract Soil organic carbon (SOC) is a crucial component in soil quality, health, and ecosystem function.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：soil organic carbon machine learning、soil carbon prediction machine learning、soil organic carbon random forest、soil organic carbon gradient boosting"
+      },
+      "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "last_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "doi:10.3390/app16094433",
+      "source": "OpenAlex",
+      "title": "Cross-Regional Hyperspectral Estimation of Soil Organic Carbon in Eurasian Black Soils Using an Optimal Spectral Feature Set",
+      "authors": [
+        "Aonan Zhang",
+        "Shengbo Chen",
+        "Zhengyuan Xu",
+        "X X Xu",
+        "Z Wang"
+      ],
+      "summary": "Soil organic carbon (SOC) plays a critical role in the global carbon cycle and agroecosystem productivity. However, existing hyperspectral inversion models often exhibit significant predictive biases when applied across large geographic scales, primarily due to the spatial heterogeneity of pedogenic environments and background mineralogy. This study proposes a cross-regional SOC prediction method based on an optimal spectral feature set (SOC-OSFS). Leveraging laboratory hyperspectral and SOC data from 17,730 samples collected across the black soil regions of Northeast China and Europe, a core spectral feature set comprising 31 diagnostic bands was extracted using the competitive adaptive reweighted sampling (CARS) algorithm combined with the successive projections algorithm (SPA). Although this SOC-OSFS accounts for merely 1.55% of the original full-spectrum dimensionality (31 out of 2000 bands), it demonstrated robust analytical capability in local modeling across all study regions, yielding coefficients of determination (R2 = 0.6714–0.8854). When transferring the prediction model calibrated in the core source domain (n = 10,000) to the other seven independent typical black soil target domains, the direct cross-regional prediction consistently reduced the root mean square error (RMSE) by over 15% compared to that of the full-spectrum models. By further incorporating 20% of the local background samples for intercept correction, the cross-regional predictive accuracy was substantially improved; the goodness-of-fit for the Northeast China target domains increased sharply (maximum R2 = 0.8567), and the European target domains, which feature substantially different pedogenic environments, were successfully corrected from negative to positive linear fits. This study validates the efficacy of extracting physiochemically meaningful spectral bands in mitigating the interference caused by spatial heterogeneity, thereby providing a mechanistically grounded and practically viable framework for large-scale SOC estimation via remote sensing.",
+      "published": "2026-05-01T00:00:00+00:00",
+      "updated": "2026-05-01T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.3390/app16094433",
+      "pdf_url": "https://doi.org/10.3390/app16094433",
+      "categories": [
+        "Applied Sciences",
+        "Soil Geostatistics and Mapping",
+        "Remote Sensing in Agriculture",
+        "Geochemistry and Geologic Mapping",
+        "Hyperspectral imaging",
+        "Feature (linguistics)",
+        "Soil water",
+        "Soil carbon",
+        "Pattern recognition (psychology)",
+        "Inversion (geology)"
+      ],
+      "seed_topic": "remote_sensing_retrieval_prediction",
+      "matches": [
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.53,
+          "level": "medium",
+          "reason": "关键词命中：soil organic carbon remote sensing、hyperspectral soil organic carbon、soil carbon inversion remote sensing",
+          "keyword_hits": [
+            "soil organic carbon remote sensing",
+            "hyperspectral soil organic carbon",
+            "soil carbon inversion remote sensing"
+          ]
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.188,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.125,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "remote_sensing_retrieval_prediction",
+        "topic_name": "遥感反演与预测",
+        "score": 0.53,
+        "level": "medium",
+        "reason": "关键词命中：soil organic carbon remote sensing、hyperspectral soil organic carbon、soil carbon inversion remote sensing",
+        "keyword_hits": [
+          "soil organic carbon remote sensing",
+          "hyperspectral soil organic carbon",
+          "soil carbon inversion remote sensing"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Soil organic carbon (SOC) plays a critical role in the global carbon cycle and agroecosystem productivity.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：soil organic carbon remote sensing、hyperspectral soil organic carbon、soil carbon inversion remote sensing"
+      },
+      "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "last_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "doi:10.1029/2025jg009429",
+      "source": "OpenAlex",
+      "title": "Field Evidence of Carbon and Nitrogen Stabilization Through Mineral‐Associated Organic Matter Formation in Coastal Wetland Soils",
+      "authors": [
+        "Anthony J. Mirabito",
+        "Gabriel Pereira",
+        "Nia Hurst",
+        "Jacob Berkowitz",
+        "Lisa G. Chambers"
+      ],
+      "summary": "Abstract With environmental conditions dynamic by nature, research often aims to understand the factors that influence soil carbon (C) and nitrogen (N) storage through the inhibition of soil organic matter (SOM) mineralization. Characterization of mineral‐associated organic matter (MAOM), a stable pool of SOM, has been heavily researched in upland soils, but quantification within wetland soils remains limited. This study sought to quantify MAOM in two distinct natural coastal wetlands in Apalachicola, FL, one organic and one mineral, and one created coastal wetland and evaluate evidence for SOM stabilization through the perspective of two primary mechanisms: physicochemical protection and biochemical protection. MAOM concentrations were highest in the natural organic wetland (66–108 mg MAOM‐C g −1 and 4–15 mg MAOM‐N g −1 ) and lowest in the created wetland (16–33 mg MAOM‐C g −1 and 1–8 mg MAOM‐N g −1 ). However, within the MAOM pool, the created wetland contained a higher percentage of total C (44%–65%) and N (68%–84%) across the 50‐cm soil profile than the natural wetlands, indicating greater efficiency in C and N stabilization. Evidence of SOM stability through physicochemical protection was observed in all wetlands as the percentage of MAOM increased with depth, while indicators of biochemical protection of SOM (i.e., increasing lignin and C:N) were limited. The MAOM pool was better predicted by soil organic properties than by mineral properties. Results from this study demonstrate that MAOM is a major component of coastal wetland soils (comprising 38%–66% of the total C and &gt;60% of the total N) and suggest that MAOM contributes to long‐term SOM burial.",
+      "published": "2026-05-01T00:00:00+00:00",
+      "updated": "2026-05-01T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.1029/2025jg009429",
+      "pdf_url": "https://doi.org/10.1029/2025jg009429",
+      "categories": [
+        "Journal of Geophysical Research Biogeosciences",
+        "Soil Carbon and Nitrogen Dynamics",
+        "Peatlands and Wetlands Ecology",
+        "Soil and Water Nutrient Dynamics",
+        "Wetland",
+        "Organic matter",
+        "Soil water",
+        "Soil organic matter",
+        "Total organic carbon",
+        "Soil carbon"
+      ],
+      "seed_topic": "mineral_associated_carbon",
+      "matches": [
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.479,
+          "level": "medium",
+          "reason": "关键词命中：mineral-associated organic carbon soil、mineral associated organic matter soil、soil carbon mineral protection",
+          "keyword_hits": [
+            "mineral-associated organic carbon soil",
+            "mineral associated organic matter soil",
+            "soil carbon mineral protection"
+          ]
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.156,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.125,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.125,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "mineral_associated_carbon",
+        "topic_name": "矿物结合态碳",
+        "score": 0.479,
+        "level": "medium",
+        "reason": "关键词命中：mineral-associated organic carbon soil、mineral associated organic matter soil、soil carbon mineral protection",
+        "keyword_hits": [
+          "mineral-associated organic carbon soil",
+          "mineral associated organic matter soil",
+          "soil carbon mineral protection"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Abstract With environmental conditions dynamic by nature, research often aims to understand the factors that influence soil carbon (C) and nitrogen (N) storage through the inhibition of soil organic matter (SOM) mineralization.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：mineral-associated organic carbon soil、mineral associated organic matter soil、soil carbon mineral protection"
+      },
+      "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "last_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "doi:10.1002/saj2.70254",
+      "source": "OpenAlex",
+      "title": "Mineral‐associated organic matter and soil health indicators in subsiding cultivated histosols of the Everglades Agricultural Area",
+      "authors": [
+        "Mumtahina Riza",
+        "Suraj Melkani",
+        "Noel Manirakiza",
+        "Jehangir H. Bhadha",
+        "Zihan Li",
+        "Jing Hu",
+        "Lisa G. Chambers"
+      ],
+      "summary": "Abstract Soil drainage leads to subsidence in organic‐rich peat soils (histosols) due to compaction and accelerated soil oxidation, removing carbon (C). Research suggests mineral‐associated organic matter (MAOM) promotes soil C persistence, but the prevalence of MAOM in cultivated histosols and its relationship with commonly measured soil health indicators (SHIs) are unknown. The objectives of this study were to (1) quantify soil C fractions and diverse SHIs in the Everglades Agricultural Area, Florida, to comprehensively evaluate the soil condition, and (2) determine if any existing SHIs, general soil properties, depth, or profile thickness may predict MAOM abundance. Soil cores were collected at 15 locations and up to 45‐cm depth. Profile thickness (a proxy for oxidation) was determined by probing to bedrock, and C fractionation included both physical and density separation. Soil organic matter (SOM) content averaged 62% by mass, with nearly 50% of the soil aggregates &gt;2 mm. Potassium‐permanganate oxidizable C averaged 28.2 ± 0.9 g kg − 1 , and organic C concentration was five times greater than inorganic C. Particulate organic matter‐Carbon (POM‐C) accounted for &gt;99% of soil (220.6 ± 9.3 g kg − 1 ), while mineral‐associated organic matter‐Carbon (MAOM‐C) represented &lt;1% (0.3 ± 0.1 g kg − 1 ). POM‐C was predicted by soil profile thickness and several SHIs, but MAOM‐C was not well predicted by almost any parameter measured. Results emphasize the predominance of unassociated organic C and suggest MAOM may serve as a unique SHI for organic soils. Management practices should focus on preventing further loss of vulnerable POM‐C and promoting MAOM‐C formation.",
+      "published": "2026-05-01T00:00:00+00:00",
+      "updated": "2026-05-01T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.1002/saj2.70254",
+      "pdf_url": "https://doi.org/10.1002/saj2.70254",
+      "categories": [
+        "Soil Science Society of America Journal",
+        "Peatlands and Wetlands Ecology",
+        "Soil Carbon and Nitrogen Dynamics",
+        "Heavy metals in environment",
+        "Histosol",
+        "Soil water",
+        "Soil organic matter",
+        "Peat",
+        "Organic matter",
+        "Total organic carbon"
+      ],
+      "seed_topic": "mineral_associated_carbon",
+      "matches": [
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.479,
+          "level": "medium",
+          "reason": "关键词命中：mineral-associated organic carbon soil、mineral associated organic matter soil、soil organic carbon fractions",
+          "keyword_hits": [
+            "mineral-associated organic carbon soil",
+            "mineral associated organic matter soil",
+            "soil organic carbon fractions"
+          ]
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.156,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.125,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "mineral_associated_carbon",
+        "topic_name": "矿物结合态碳",
+        "score": 0.479,
+        "level": "medium",
+        "reason": "关键词命中：mineral-associated organic carbon soil、mineral associated organic matter soil、soil organic carbon fractions",
+        "keyword_hits": [
+          "mineral-associated organic carbon soil",
+          "mineral associated organic matter soil",
+          "soil organic carbon fractions"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Abstract Soil drainage leads to subsidence in organic‐rich peat soils (histosols) due to compaction and accelerated soil oxidation, removing carbon (C).",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：mineral-associated organic carbon soil、mineral associated organic matter soil、soil organic carbon fractions"
+      },
+      "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "last_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "doi:10.1007/s10533-026-01342-y",
+      "source": "OpenAlex",
+      "title": "Mineral associated organic carbon correlates with soil health in agricultural fields",
+      "authors": [
+        "Erin Lane",
+        "Kathryn White",
+        "Alissa White",
+        "Julia Siegel",
+        "Heather Darby",
+        "Caitlin Hicks Pries"
+      ],
+      "summary": "Abstract Increasing terrestrial carbon storage can reduce atmospheric carbon dioxide levels as a climate mitigation strategy. Agricultural soil offers potential for persistent soil carbon sequestration. Mineral-associated organic carbon (MAOC) is generally more persistent than particulate organic carbon (POC), but it is unclear how much influence soil health and management can have on MAOC relative to climate and edaphic conditions. Soil samples from 196 agricultural fields on 77 farms throughout Vermont were fractionated by size to understand how these factors affect the amount and proportions of POC and MAOC. Our results reveal a significant effect of crop type, climate, soil texture, and aggregate stability on these carbon fractions. Hay and pasture fields had on average 69% more POC and 30% more MAOC than corn and vegetable fields. Both POC and MAOC increased with improved soil health scores suggesting that healthier soils store more carbon in both fractions. MAOC dynamics also varied with soil texture. In clay-rich soils, MAOC increases with mean annual temperature (MAT), particularly in regions with higher mean annual precipitation (MAP). However, this effect is the opposite in soils with lower clay content in which MAOC decreases with higher MAT and MAP. Overall, our findings demonstrate that MAOC can be influenced by management, highlighting how effective soil management strategies aimed at increasing soil health like planting perennials can also enhance long-term carbon sequestration in agricultural soils.",
+      "published": "2026-05-18T00:00:00+00:00",
+      "updated": "2026-05-18T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.1007/s10533-026-01342-y",
+      "pdf_url": "https://doi.org/10.1007/s10533-026-01342-y",
+      "categories": [
+        "Biogeochemistry",
+        "Soil Carbon and Nitrogen Dynamics",
+        "Earth Systems and Cosmic Evolution",
+        "Soil Geostatistics and Mapping",
+        "Soil carbon",
+        "Carbon sequestration",
+        "Soil water",
+        "Edaphic",
+        "Soil organic matter",
+        "No-till farming"
+      ],
+      "seed_topic": "mineral_associated_carbon",
+      "matches": [
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.47,
+          "level": "medium",
+          "reason": "关键词命中：mineral-associated organic carbon soil、MAOC soil carbon、soil organic carbon fractions",
+          "keyword_hits": [
+            "mineral-associated organic carbon soil",
+            "MAOC soil carbon",
+            "soil organic carbon fractions"
+          ]
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.125,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "mineral_associated_carbon",
+        "topic_name": "矿物结合态碳",
+        "score": 0.47,
+        "level": "medium",
+        "reason": "关键词命中：mineral-associated organic carbon soil、MAOC soil carbon、soil organic carbon fractions",
+        "keyword_hits": [
+          "mineral-associated organic carbon soil",
+          "MAOC soil carbon",
+          "soil organic carbon fractions"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Abstract Increasing terrestrial carbon storage can reduce atmospheric carbon dioxide levels as a climate mitigation strategy.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：mineral-associated organic carbon soil、MAOC soil carbon、soil organic carbon fractions"
+      },
+      "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "last_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "doi:10.1016/j.rechem.2026.103386",
+      "source": "OpenAlex",
+      "title": "Estimating soil organic carbon by integrating mid-infrared spectroscopy with explainable machine learning",
+      "authors": [
+        "Most. Mira Khatun",
+        "Md. Mahmudul Hasan",
+        "Md Sadiul Alam Chyon",
+        "Rashid Anzoom",
+        "Md Wadud Ahmed",
+        "Md. Shafiul Azam",
+        "S. M. Hasan Sazzad Iqbal",
+        "Md. Abdur Rahim",
+        "Md. Niaz Imtiaz",
+        "Md. Toukir Ahmed"
+      ],
+      "summary": "Organic carbon is a crucial soil parameter that significantly influences soil fertility, structural stability, microbial activity, and overall agricultural productivity. Traditional methods for measuring organic carbon are often time-consuming, labor-intensive, and expensive. This study explores the use of spectroscopy integrated with machine learning as a non-destructive and efficient alternative. Specifically, the Partial Least Squares Regression (PLSR) and Random Forest (RF) models were employed to predict soil organic carbon (SOC) based on mid-infrared spectroscopy (MIR) data within the spectral range of 600–4000 cm−1. The RF model was optimized through hyperparameter tuning using the Grid-Search method, achieving high predictive accuracy with a coefficient of determination (R2P) value of 0.98 and a root mean square error (RMSEP) of 1.45%. Furthermore, explainable artificial intelligence (XAI) based Shapley Additive Explanation (SHAP) technique was utilized to interpret the model and evaluate the contribution of specific wavelengths to the predictions. The results underscore the effectiveness and increasing relevance of combining explainable machine learning with spectroscopy for reliable and practical applications in the agricultural sector.",
+      "published": "2026-05-01T00:00:00+00:00",
+      "updated": "2026-05-01T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.1016/j.rechem.2026.103386",
+      "pdf_url": "https://doi.org/10.1016/j.rechem.2026.103386",
+      "categories": [
+        "Results in Chemistry",
+        "Soil Geostatistics and Mapping",
+        "Geochemistry and Geologic Mapping",
+        "Spectroscopy and Chemometric Analyses",
+        "Total organic carbon",
+        "Carbon fibers",
+        "Spectroscopy",
+        "Soil carbon",
+        "Soil water"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.45,
+          "level": "medium",
+          "reason": "关键词命中：soil organic carbon machine learning、soil organic carbon random forest",
+          "keyword_hits": [
+            "soil organic carbon machine learning",
+            "soil organic carbon random forest"
+          ]
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "machine_learning_soil_carbon",
+        "topic_name": "机器学习",
+        "score": 0.45,
+        "level": "medium",
+        "reason": "关键词命中：soil organic carbon machine learning、soil organic carbon random forest",
+        "keyword_hits": [
+          "soil organic carbon machine learning",
+          "soil organic carbon random forest"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Organic carbon is a crucial soil parameter that significantly influences soil fertility, structural stability, microbial activity, and overall agricultural productivity.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：soil organic carbon machine learning、soil organic carbon random forest"
+      },
+      "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "last_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "doi:10.1016/j.apsoil.2026.107171",
+      "source": "OpenAlex",
+      "title": "Microbial carbon controls particulate and mineral-associated soil organic matter depending on cropping system in subtropical regions",
+      "authors": [
+        "Pujia Yu",
+        "Yakov Kuzyakov",
+        "Caixian Tang",
+        "M Ingjun Chen",
+        "Xizao Sun",
+        "Weiyu Shi"
+      ],
+      "summary": "",
+      "published": "2026-05-27T00:00:00+00:00",
+      "updated": "2026-05-27T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.1016/j.apsoil.2026.107171",
+      "pdf_url": "https://doi.org/10.1016/j.apsoil.2026.107171",
+      "categories": [
+        "Applied Soil Ecology",
+        "Soil Carbon and Nitrogen Dynamics",
+        "Microbial Community Ecology and Physiology",
+        "Clay minerals and soil interactions",
+        "Soil organic matter",
+        "Organic matter",
+        "Dominance (genetics)",
+        "Soil water",
+        "Soil carbon",
+        "Total organic carbon"
+      ],
+      "seed_topic": "mineral_associated_carbon",
+      "matches": [
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.367,
+          "level": "low",
+          "reason": "关键词命中：mineral-associated organic carbon soil、mineral associated organic matter soil",
+          "keyword_hits": [
+            "mineral-associated organic carbon soil",
+            "mineral associated organic matter soil"
+          ]
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.125,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "mineral_associated_carbon",
+        "topic_name": "矿物结合态碳",
+        "score": 0.367,
+        "level": "low",
+        "reason": "关键词命中：mineral-associated organic carbon soil、mineral associated organic matter soil",
+        "keyword_hits": [
+          "mineral-associated organic carbon soil",
+          "mineral associated organic matter soil"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "请打开论文链接查看方法细节。",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：mineral-associated organic carbon soil、mineral associated organic matter soil"
+      },
+      "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "last_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "doi:10.1002/ldr.70683",
+      "source": "OpenAlex",
+      "title": "Afforestation Enhances Soil Mineral‐Associated Organic Carbon Accumulation Through Calcium‐Mediated Microbial Pathways in Karst Ecosystems",
+      "authors": [
+        "Chengyu Zhang",
+        "Jixiang Luo",
+        "Peilei Hu",
+        "Wei Zhang",
+        "Lei Xu",
+        "Lei Xie",
+        "Kelin Wang",
+        "Yingying Ye"
+      ],
+      "summary": "ABSTRACT Mineral‐associated organic carbon (MAOC), protected from rapid microbial decomposition through mineral‐organic associations, is vital for the long‐term stability of soil carbon pools. Afforestation is a critical strategy for enhancing soil carbon storage; however, the mechanisms governing MAOC accumulation across divergent climatic conditions remain unclear, particularly for karst regions, which are ecologically fragile and characterized by high‐calcium (Ca) soils. Here we compared MAOC content and its key drivers between croplands and 20‐year‐old plantations across a broad climatic gradient in the karst region of southwest China. We found that afforestation significantly increased MAOC content in warmer regions (&gt; 18°C) compared with cooler areas (&lt; 15.6°C). Across the entire region, afforestation increased MAOC content by 64% compared to cropland soils. Soil exchangeable Ca, microbial biomass carbon (MBC), and microbial necromass carbon (MNC) were identified as the primary factors influencing MAOC accumulation. Afforestation promoted MAOC accumulation through increasing soil exchangeable Ca, microbial biomass, and microbial necromass. Specifically, two key pathways were identified: (1) afforestation increased soil exchangeable Ca content, which subsequently promoted MBC and MNC contents, thereby driving MAOC accumulation and (2) afforestation directly increased MNC content, facilitating MAOC accumulation. Furthermore, under afforestation, higher temperature and precipitation enhanced soil exchangeable Ca content, thereby promoting MAOC accumulation in warmer and wetter regions. These findings elucidate how afforestation strengthens Ca‐mediated interactions between microbial biomass and necromass to enhance MAOC accumulation in karst ecosystems. Under warmer climates, afforestation in karst regions offers an effective approach to bolstering soil carbon stability, providing a mechanistic framework for optimizing restoration strategies in climatically diverse and vulnerable landscapes.",
+      "published": "2026-05-26T00:00:00+00:00",
+      "updated": "2026-05-26T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.1002/ldr.70683",
+      "pdf_url": "https://doi.org/10.1002/ldr.70683",
+      "categories": [
+        "Land Degradation and Development",
+        "Soil Carbon and Nitrogen Dynamics",
+        "Microbial Community Ecology and Physiology",
+        "Karst Systems and Hydrogeology",
+        "Afforestation",
+        "Karst",
+        "Soil carbon",
+        "Biomass (ecology)",
+        "Ecosystem",
+        "Total organic carbon"
+      ],
+      "seed_topic": "mineral_associated_carbon",
+      "matches": [
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.359,
+          "level": "low",
+          "reason": "关键词命中：mineral-associated organic carbon soil、MAOC soil carbon",
+          "keyword_hits": [
+            "mineral-associated organic carbon soil",
+            "MAOC soil carbon"
+          ]
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.156,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.125,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.125,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "mineral_associated_carbon",
+        "topic_name": "矿物结合态碳",
+        "score": 0.359,
+        "level": "low",
+        "reason": "关键词命中：mineral-associated organic carbon soil、MAOC soil carbon",
+        "keyword_hits": [
+          "mineral-associated organic carbon soil",
+          "MAOC soil carbon"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "ABSTRACT Mineral‐associated organic carbon (MAOC), protected from rapid microbial decomposition through mineral‐organic associations, is vital for the long‐term stability of soil carbon pools.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：mineral-associated organic carbon soil、MAOC soil carbon"
+      },
+      "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "last_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "doi:10.1007/s10661-026-15406-x",
+      "source": "OpenAlex",
+      "title": "Estimating soil organic carbon content in reclaimed mining areas using unmanned aerial vehicle multispectral remote sensing and deep learning algorithms",
+      "authors": [
+        "Qiuyue Li",
+        "Qinyi Liu",
+        "Zesheng Li",
+        "X C Li",
+        "Xiao Hu"
+      ],
+      "summary": "",
+      "published": "2026-05-05T00:00:00+00:00",
+      "updated": "2026-05-05T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.1007/s10661-026-15406-x",
+      "pdf_url": "https://doi.org/10.1007/s10661-026-15406-x",
+      "categories": [
+        "Environmental Monitoring and Assessment",
+        "Soil Geostatistics and Mapping",
+        "Geochemistry and Geologic Mapping",
+        "Remote Sensing in Agriculture",
+        "Multispectral image",
+        "Multispectral pattern recognition",
+        "Deep learning",
+        "Soil carbon",
+        "Soil quality",
+        "Total organic carbon"
+      ],
+      "seed_topic": "remote_sensing_retrieval_prediction",
+      "matches": [
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.319,
+          "level": "low",
+          "reason": "关键词命中：soil organic carbon deep learning",
+          "keyword_hits": [
+            "soil organic carbon deep learning"
+          ]
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.287,
+          "level": "low",
+          "reason": "关键词命中：soil organic carbon remote sensing",
+          "keyword_hits": [
+            "soil organic carbon remote sensing"
+          ]
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "machine_learning_soil_carbon",
+        "topic_name": "机器学习",
+        "score": 0.319,
+        "level": "low",
+        "reason": "关键词命中：soil organic carbon deep learning",
+        "keyword_hits": [
+          "soil organic carbon deep learning"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "请打开论文链接查看方法细节。",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：soil organic carbon deep learning"
+      },
+      "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "last_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "doi:10.1007/s10021-026-01061-3",
+      "source": "OpenAlex",
+      "title": "Estimation of Forest Soil Organic Carbon Density in Dry Tropical Valleys Based on Multi-source Data and Machine Learning Algorithm",
+      "authors": [
+        "Xiongwei Xu",
+        "Can Xu",
+        "Liankai Zhang",
+        "Yang Jinjiang",
+        "Guiren Chen",
+        "Canfeng Li",
+        "Chen Zhang",
+        "Fuyan Zou",
+        "Min Yan",
+        "Zhenhui Wang",
+        "Xuefeng Peng"
+      ],
+      "summary": "",
+      "published": "2026-05-26T00:00:00+00:00",
+      "updated": "2026-05-26T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.1007/s10021-026-01061-3",
+      "pdf_url": "https://doi.org/10.1007/s10021-026-01061-3",
+      "categories": [
+        "Ecosystems",
+        "Soil Geostatistics and Mapping",
+        "Soil and Land Suitability Analysis",
+        "Soil Carbon and Nitrogen Dynamics",
+        "Soil carbon",
+        "Random forest",
+        "Estimation",
+        "Tropical forest",
+        "Tropical and subtropical dry broadleaf forests",
+        "Density estimation"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.287,
+          "level": "low",
+          "reason": "关键词命中：soil organic carbon machine learning",
+          "keyword_hits": [
+            "soil organic carbon machine learning"
+          ]
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "machine_learning_soil_carbon",
+        "topic_name": "机器学习",
+        "score": 0.287,
+        "level": "low",
+        "reason": "关键词命中：soil organic carbon machine learning",
+        "keyword_hits": [
+          "soil organic carbon machine learning"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "请打开论文链接查看方法细节。",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：soil organic carbon machine learning"
+      },
+      "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "last_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "doi:10.1016/j.compag.2026.111845",
+      "source": "OpenAlex",
+      "title": "Hyperspectral response and quantitative monitoring of soil organic carbon on the Loess Plateau",
+      "authors": [
+        "Sha Yang",
+        "Zhigang Wang",
+        "Chenzhi Zheng",
+        "Yuchao Yang",
+        "Jiancheng Zhang",
+        "Xingxing Qiao",
+        "W.H. Rickard",
+        "Yu Zhao",
+        "Meichen Feng",
+        "Longmei Gao",
+        "Wude Yang",
+        "Chao Wang"
+      ],
+      "summary": "• Hyperspectral features of SOC-related factors improve SOC estimation accuracy. • SOC sequestration is regulated by complex interactions, not single factors. • Indirect spectral models outperform direct models in SOC prediction accuracy. • Soil enzyme activity shows strongest hyperspectral response, aiding SOC estimation. The accurate estimation of soil organic carbon (SOC) is crucial for effective soil resource management, improvement agricultural productivity, and mitigating climate change. To investigate the hyperspectral response mechanisms of SOC and its influencing factors, this study was conducted based on a long-term conservation tillage experiment in a winter wheat field. Soil samples were collected from a depth of 0–60 cm during 2020–2023. Hyperspectral data were analyzed using multiple preprocessing and feature selection techniques, and prediction models for SOC and its influencing factors were constructed. The quantitative relationships between different transformed spectra and SOC, as well as its influencing factors, were determined. The optimal spectral features for SOC and its influencing factors were identified. Based on the response of SOC content to its stabilization mechanisms, the optimal spectral features of influencing factors were reorganized to form new characteristic wavelength combinations. These combinations were further used to develop an indirect spectral model for SOC prediction. This approach enabled the identification of the spectral response mechanisms of SOC stabilization processes. The results indicated that spectral reflectance was inversely correlated with SOC, GSSI (general soil structure index), Dm (fractal dimension of mechanical aggregates), MI-OC (microaggregate organic carbon), and SSA (soil sucrase activity). The characteristic regions for SOC were primarily distributed at 400–430 nm, 675–691 nm, and 713–754 nm. These regions were primarily located within the visible spectrum and did not overlap with the optimal characteristic wavelengths of its influencing factors. In the direct modeling of SOC, the optimal preprocessing and wavelength selection methods were the 1st-order differentiation and SBS (sequential backward selection), respectively. RF (random forest) was identified as the most effective modeling method (R v 2 = 0.69, RMSE v = 0.32, MAE v = 0.25). In the spectral estimation methods for SOC influencing factors, the 1st-order differentiation was the optimal preprocessing method, and RF demonstrated superior performance as the modeling approach. The spectral response effects of SSA, GSSI, mechanical aggregate parameters, and FSP-OC (total Organic Carbon of Free Silt and clay Particles) were higher than those of SOC. The indirect model for SOC constructed from the optimal combination of characteristic wavelengths of its influencing factors exhibited higher accuracy (R v 2 = 0.74, RMSE v = 0.27, MAE v = 0.21) than the direct model. SOC sequestration was influenced by the combined effects of multiple soil factors rather than a single indicator. The results confirm the feasibility of hyperspectral SOC monitoring and support its application in rapid soil fertility assessment.",
+      "published": "2026-05-07T00:00:00+00:00",
+      "updated": "2026-05-07T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.1016/j.compag.2026.111845",
+      "pdf_url": "https://doi.org/10.1016/j.compag.2026.111845",
+      "categories": [
+        "Computers and Electronics in Agriculture",
+        "Soil Geostatistics and Mapping",
+        "Remote Sensing in Agriculture",
+        "Soil Carbon and Nitrogen Dynamics",
+        "Hyperspectral imaging",
+        "Soil carbon",
+        "Tillage",
+        "Loess plateau",
+        "Preprocessor",
+        "Principal component analysis"
+      ],
+      "seed_topic": "remote_sensing_retrieval_prediction",
+      "matches": [
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.287,
+          "level": "low",
+          "reason": "关键词命中：soil organic carbon random forest",
+          "keyword_hits": [
+            "soil organic carbon random forest"
+          ]
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.268,
+          "level": "low",
+          "reason": "关键词命中：hyperspectral soil organic carbon",
+          "keyword_hits": [
+            "hyperspectral soil organic carbon"
+          ]
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.188,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.125,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "machine_learning_soil_carbon",
+        "topic_name": "机器学习",
+        "score": 0.287,
+        "level": "low",
+        "reason": "关键词命中：soil organic carbon random forest",
+        "keyword_hits": [
+          "soil organic carbon random forest"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "• Hyperspectral features of SOC-related factors improve SOC estimation accuracy.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：soil organic carbon random forest"
+      },
+      "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "last_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "doi:10.1007/s00374-026-02015-6",
+      "source": "OpenAlex",
+      "title": "From biological to structural controls: explainable machine learning reveals depth-dependent shifts in predictors of soil organic carbon and microbial biomass across depth in subtropical plantations",
+      "authors": [
+        "Jingjing Zhuang",
+        "Cuina Yang",
+        "Yixuan Wang",
+        "Linbo Ma",
+        "Cui Cheng"
+      ],
+      "summary": "",
+      "published": "2026-05-02T00:00:00+00:00",
+      "updated": "2026-05-02T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.1007/s00374-026-02015-6",
+      "pdf_url": "https://doi.org/10.1007/s00374-026-02015-6",
+      "categories": [
+        "Biology and Fertility of Soils",
+        "Soil Carbon and Nitrogen Dynamics",
+        "Microbial Community Ecology and Physiology",
+        "Soil Geostatistics and Mapping",
+        "Biomass (ecology)",
+        "Subtropics",
+        "Soil carbon",
+        "Carbon fibers",
+        "Total organic carbon",
+        "Soil biology"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.287,
+          "level": "low",
+          "reason": "关键词命中：soil organic carbon machine learning",
+          "keyword_hits": [
+            "soil organic carbon machine learning"
+          ]
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "machine_learning_soil_carbon",
+        "topic_name": "机器学习",
+        "score": 0.287,
+        "level": "low",
+        "reason": "关键词命中：soil organic carbon machine learning",
+        "keyword_hits": [
+          "soil organic carbon machine learning"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "请打开论文链接查看方法细节。",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：soil organic carbon machine learning"
+      },
+      "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "last_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "doi:10.1016/j.iswcr.2026.100661",
+      "source": "OpenAlex",
+      "title": "A high-resolution soil organic carbon mapping framework integrated machine learning and elevation-corrected climate data in alpine canyon region",
+      "authors": [
+        "Jiao Dou",
+        "Enwei Zhang",
+        "Shengzhao Wei",
+        "Chenli Liu",
+        "Honghong Lin",
+        "Wantao Yang",
+        "Qi Li",
+        "Xingwu Duan"
+      ],
+      "summary": "",
+      "published": "2026-05-01T00:00:00+00:00",
+      "updated": "2026-05-01T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.1016/j.iswcr.2026.100661",
+      "pdf_url": "https://doi.org/10.1016/j.iswcr.2026.100661",
+      "categories": [
+        "International Soil and Water Conservation Research",
+        "Soil Geostatistics and Mapping",
+        "Climate change and permafrost",
+        "Soil Carbon and Nitrogen Dynamics",
+        "Canyon",
+        "Soil carbon",
+        "Climate change",
+        "Digital soil mapping",
+        "Carbon cycle",
+        "Total organic carbon"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.287,
+          "level": "low",
+          "reason": "关键词命中：soil organic carbon machine learning",
+          "keyword_hits": [
+            "soil organic carbon machine learning"
+          ]
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.125,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "machine_learning_soil_carbon",
+        "topic_name": "机器学习",
+        "score": 0.287,
+        "level": "low",
+        "reason": "关键词命中：soil organic carbon machine learning",
+        "keyword_hits": [
+          "soil organic carbon machine learning"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "请打开论文链接查看方法细节。",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：soil organic carbon machine learning"
+      },
+      "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "last_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "doi:10.25303/306rjce038044",
+      "source": "OpenAlex",
+      "title": "Geospatial assessment of organic carbon in soil using Walkley–black titration and remote sensing indices in Coimbatore city",
+      "authors": [
+        "S. D. Anitha Selvasofia",
+        "E. Sarojini",
+        "S. Kanchana"
+      ],
+      "summary": "Soil nutrients are the main source of food and growth for plants. Nowadays soil is at risk because it often lacks in nutrients. Changes in soil nutrients are very important in farming areas. By incorporating remote sensing tools, we can measure the soil nutrients to make soil better helping the farmer for the long term process. Organic carbon in sol is an important part in the earth topsoil that helps in holding water and good strength in the soil4 . Measuring of organic carbon in soil takes a lot of time, money and effort using laserinduced breakdown spectroscopy. Geographical Information System (GIS) and satellite imageries make it easier to predict the organic carbon in soil level more accurately. Soil samples will be tested in the lab by Walkley black titration to compare the results with data from satellite imageries.",
+      "published": "2026-04-30T00:00:00+00:00",
+      "updated": "2026-04-30T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.25303/306rjce038044",
+      "pdf_url": "https://doi.org/10.25303/306rjce038044",
+      "categories": [
+        "Research Journal of Chemistry and Environment",
+        "Soil Geostatistics and Mapping",
+        "Geochemistry and Geologic Mapping",
+        "Remote Sensing in Agriculture",
+        "Topsoil",
+        "Soil carbon",
+        "Total organic carbon",
+        "Nutrient",
+        "Soil nutrients",
+        "Soil test"
+      ],
+      "seed_topic": "remote_sensing_retrieval_prediction",
+      "matches": [
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.287,
+          "level": "low",
+          "reason": "关键词命中：soil organic carbon remote sensing",
+          "keyword_hits": [
+            "soil organic carbon remote sensing"
+          ]
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.156,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "remote_sensing_retrieval_prediction",
+        "topic_name": "遥感反演与预测",
+        "score": 0.287,
+        "level": "low",
+        "reason": "关键词命中：soil organic carbon remote sensing",
+        "keyword_hits": [
+          "soil organic carbon remote sensing"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Soil nutrients are the main source of food and growth for plants.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：soil organic carbon remote sensing"
+      },
+      "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "last_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "doi:10.1016/j.soilad.2026.100121",
+      "source": "OpenAlex",
+      "title": "Soil organic carbon modeling in a typical basin of the Bolivian highlands using field and remote sensing data. Implication for soil carbon monitoring",
+      "authors": [
+        "Gavi Alavi-Murillo",
+        "Jan Diels",
+        "Magali Garcia",
+        "Patrick Willems"
+      ],
+      "summary": "",
+      "published": "2026-05-20T00:00:00+00:00",
+      "updated": "2026-05-20T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.1016/j.soilad.2026.100121",
+      "pdf_url": "https://doi.org/10.1016/j.soilad.2026.100121",
+      "categories": [
+        "Soil Advances",
+        "Soil Geostatistics and Mapping",
+        "Science and Climate Studies",
+        "Geochemistry and Geologic Mapping",
+        "Structural basin",
+        "Carbon fibers",
+        "Field (mathematics)",
+        "Soil carbon",
+        "Total organic carbon",
+        "Carbon cycle"
+      ],
+      "seed_topic": "remote_sensing_retrieval_prediction",
+      "matches": [
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.256,
+          "level": "low",
+          "reason": "关键词命中：soil organic carbon remote sensing",
+          "keyword_hits": [
+            "soil organic carbon remote sensing"
+          ]
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.156,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "remote_sensing_retrieval_prediction",
+        "topic_name": "遥感反演与预测",
+        "score": 0.256,
+        "level": "low",
+        "reason": "关键词命中：soil organic carbon remote sensing",
+        "keyword_hits": [
+          "soil organic carbon remote sensing"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "请打开论文链接查看方法细节。",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：soil organic carbon remote sensing"
+      },
+      "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "last_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "doi:10.1016/j.ecolind.2026.114925",
+      "source": "OpenAlex",
+      "title": "Plant carbon fluxes govern soil organic carbon dynamics under climate change: Machine learning reveals critical GPP thresholds",
+      "authors": [
+        "Feini Huang",
+        "Yongkun Zhang",
+        "Xingjie Lu",
+        "Wei Shangguan",
+        "Qingliang Li",
+        "Zhangcai Qin",
+        "Zhongwang Wei",
+        "Huan Yuan",
+        "Li Li",
+        "Yongjiu Dai"
+      ],
+      "summary": "Soil Organic Carbon (SOC) dynamics are profoundly influenced by climate change, yet the contributions of plant carbon fluxes, climatic forcing, and land-use changes remain poorly quantified. Here, we develop a machine learning framework to assess the drivers of SOC dynamics at both 0-20 and 20-100 cm depths across China from 1980 to 2100. The proposed model, validated via 10-fold cross-validation, achieved R 2 values of 0.41 and 0.48 for the 100-cm and 20-cm soil profiles, respectively. Furthermore, independent temporal validation across two distinct periods yielded acceptable performance, demonstrating the model’s robust capacity to capture both the spatial distribution and temporal dynamics of SOC stocks. Future projections under four Shared Socioeconomic Pathway (SSP) scenarios indicate a national-scale SOC increase of 4.8 to 7.7 Pg C at 0-100 cm by 2100 compared to 2000-2015. Sensitivity analyses show that plant carbon fluxes are the dominant control on SOC variability. SHapley Additive exPlanations (SHAP) analysis further reveals a nonlinear Gross Primary Productivity (GPP)-SOC relationship that partially offsets warming-induced SOC losses. This relationship is characterized by two key thresholds. First, at GPP ≈ 4 gC m -2 d -1 , the marginal contribution of GPP to SOC (SHAP value) transitions from negative to positive, indicating the ecosystem transitions from a net carbon deficit to a surplus, coinciding with the ecologically sensitive 400 mm isohyet of equivalent precipitation. Below this threshold, insufficient inputs stimulate existing SOC decomposition (likely priming effect). This zero-crossing indicates a regime shift where the GPP-driven carbon input overcomes historical deficit. Second, at GPP ≈ 7 gC m -2 d -1 , the positive GPP-SOC sensitivity plateaus, indicating diminishing returns in carbon sequestration with further increases in productivity. Under high-emission scenarios, this transition zone expands northwestward into historically arid regions. These findings provide actionable insights for climate-resilient land management, highlighting targeted vegetation restoration, especially afforestation aligned with hydroclimatic thresholds, as a nature-based solution to safeguard SOC stocks in a warming world. • Under climate change, carbon fluxes have a substantial and non-negligible impact on SOC dynamics. • A nonlinear GPP-SOC relationship features a threshold (GPP≈4 gC m -2 d -1 ), switching from carbon-input deficit to surplus. • Under high carbon emission scenarios, the GPP-SOC transition zone expands northwestward into arid regions in China.",
+      "published": "2026-05-08T00:00:00+00:00",
+      "updated": "2026-05-08T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.1016/j.ecolind.2026.114925",
+      "pdf_url": "https://doi.org/10.1016/j.ecolind.2026.114925",
+      "categories": [
+        "Ecological Indicators",
+        "Soil Carbon and Nitrogen Dynamics",
+        "Plant Water Relations and Carbon Dynamics",
+        "Remote Sensing in Agriculture",
+        "Primary production",
+        "Soil carbon",
+        "Climate change",
+        "Carbon cycle",
+        "Ecosystem",
+        "Carbon fibers"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.256,
+          "level": "low",
+          "reason": "关键词命中：soil organic carbon machine learning",
+          "keyword_hits": [
+            "soil organic carbon machine learning"
+          ]
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.125,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "machine_learning_soil_carbon",
+        "topic_name": "机器学习",
+        "score": 0.256,
+        "level": "low",
+        "reason": "关键词命中：soil organic carbon machine learning",
+        "keyword_hits": [
+          "soil organic carbon machine learning"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Soil Organic Carbon (SOC) dynamics are profoundly influenced by climate change, yet the contributions of plant carbon fluxes, climatic forcing, and land-use changes remain poorly quantified.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：soil organic carbon machine learning"
+      },
+      "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "last_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "doi:10.1016/j.catena.2026.110155",
+      "source": "OpenAlex",
+      "title": "Soil organic carbon stock changes over 40 years in Brazil: a country-scale assessment using soil science-informed machine learning",
+      "authors": [
+        "Nícolas Augusto Rosin",
+        "José A.M. Demattê",
+        "Budiman Minasny",
+        "Raúl Roberto Poppiel",
+        "Bruno dos Anjos Bartsch",
+        "Jorge Tadeu Fim Rosas",
+        "Heidy Soledad Rodríguez-Albarracín",
+        "Maurício R. Cherubin",
+        "Carlos Eduardo Pellegrino Cerri",
+        "Luis Eduardo Vicente"
+      ],
+      "summary": "",
+      "published": "2026-04-30T00:00:00+00:00",
+      "updated": "2026-04-30T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.1016/j.catena.2026.110155",
+      "pdf_url": "https://doi.org/10.1016/j.catena.2026.110155",
+      "categories": [
+        "CATENA",
+        "Soil Geostatistics and Mapping",
+        "Soil Carbon and Nitrogen Dynamics",
+        "Geochemistry and Geologic Mapping",
+        "Soil carbon",
+        "Total organic carbon",
+        "Stock (firearms)",
+        "Soil organic matter",
+        "Carbon stock",
+        "Soil water"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.256,
+          "level": "low",
+          "reason": "关键词命中：soil organic carbon machine learning",
+          "keyword_hits": [
+            "soil organic carbon machine learning"
+          ]
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "machine_learning_soil_carbon",
+        "topic_name": "机器学习",
+        "score": 0.256,
+        "level": "low",
+        "reason": "关键词命中：soil organic carbon machine learning",
+        "keyword_hits": [
+          "soil organic carbon machine learning"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "请打开论文链接查看方法细节。",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：soil organic carbon machine learning"
+      },
+      "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "last_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "doi:10.1016/j.catena.2026.110247",
+      "source": "OpenAlex",
+      "title": "Stabilization mechanisms and contributions of mineral-associated microbial necromass to soil organic carbon in coastal wetlands",
+      "authors": [
+        "Jine Wei",
+        "Biao Zhu",
+        "Changwei Lü",
+        "Fenfen Zhang",
+        "Yanling Zheng",
+        "Xiaofei Li",
+        "Hongpo Dong",
+        "Xia Liang",
+        "Guoyu Yin",
+        "M Liu",
+        "Lijun Hou"
+      ],
+      "summary": "",
+      "published": "2026-05-17T00:00:00+00:00",
+      "updated": "2026-05-17T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.1016/j.catena.2026.110247",
+      "pdf_url": "https://doi.org/10.1016/j.catena.2026.110247",
+      "categories": [
+        "CATENA",
+        "Soil Carbon and Nitrogen Dynamics",
+        "Microbial Community Ecology and Physiology",
+        "Peatlands and Wetlands Ecology",
+        "Wetland",
+        "Soil carbon",
+        "Total organic carbon",
+        "Carbon fibers",
+        "Saturation (graph theory)",
+        "Organic matter"
+      ],
+      "seed_topic": "mineral_associated_carbon",
+      "matches": [
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.236,
+          "level": "low",
+          "reason": "关键词命中：mineral-associated organic carbon soil",
+          "keyword_hits": [
+            "mineral-associated organic carbon soil"
+          ]
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.156,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "mineral_associated_carbon",
+        "topic_name": "矿物结合态碳",
+        "score": 0.236,
+        "level": "low",
+        "reason": "关键词命中：mineral-associated organic carbon soil",
+        "keyword_hits": [
+          "mineral-associated organic carbon soil"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "请打开论文链接查看方法细节。",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：mineral-associated organic carbon soil"
+      },
+      "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "last_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "doi:10.1016/j.geodrs.2026.e01094",
+      "source": "OpenAlex",
+      "title": "Contrasting landscape distribution of soil particulate versus mineral-associated organic carbon in a subtropical forest",
+      "authors": [
+        "Runxia Zhang",
+        "B Z Zhang",
+        "Danying Peng",
+        "Shuilin Che",
+        "Chencheng Zhang",
+        "Chengjin Chu"
+      ],
+      "summary": "",
+      "published": "2026-05-14T00:00:00+00:00",
+      "updated": "2026-05-14T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.1016/j.geodrs.2026.e01094",
+      "pdf_url": "https://doi.org/10.1016/j.geodrs.2026.e01094",
+      "categories": [
+        "Geoderma Regional",
+        "Soil Geostatistics and Mapping",
+        "Soil Carbon and Nitrogen Dynamics",
+        "Geochemistry and Geologic Mapping",
+        "Soil carbon",
+        "Topsoil",
+        "Subtropics",
+        "Total organic carbon",
+        "Silt",
+        "Soil organic matter"
+      ],
+      "seed_topic": "mineral_associated_carbon",
+      "matches": [
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.236,
+          "level": "low",
+          "reason": "关键词命中：mineral-associated organic carbon soil",
+          "keyword_hits": [
+            "mineral-associated organic carbon soil"
+          ]
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.125,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.125,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "mineral_associated_carbon",
+        "topic_name": "矿物结合态碳",
+        "score": 0.236,
+        "level": "low",
+        "reason": "关键词命中：mineral-associated organic carbon soil",
+        "keyword_hits": [
+          "mineral-associated organic carbon soil"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "请打开论文链接查看方法细节。",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：mineral-associated organic carbon soil"
+      },
+      "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "last_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "doi:10.1016/j.apsoil.2026.107115",
+      "source": "OpenAlex",
+      "title": "Arbuscular mycorrhizal symbiosis enhances the storage of particulate and mineral-associated organic carbon in soil: Insights from soil zymography and transcriptomic analysis",
+      "authors": [
+        "Yin Liu",
+        "Jin Qian",
+        "Lichao Wang",
+        "Jing Hu",
+        "Bianhe Lu",
+        "Junwei Shen",
+        "Sijing Tang"
+      ],
+      "summary": "",
+      "published": "2026-05-07T00:00:00+00:00",
+      "updated": "2026-05-07T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.1016/j.apsoil.2026.107115",
+      "pdf_url": "https://doi.org/10.1016/j.apsoil.2026.107115",
+      "categories": [
+        "Applied Soil Ecology",
+        "Mycorrhizal Fungi and Plant Interactions",
+        "Soil Carbon and Nitrogen Dynamics",
+        "Plant nutrient uptake and metabolism",
+        "Symbiosis",
+        "Soil carbon",
+        "Carbon cycle",
+        "Soil organic matter",
+        "Bulk soil",
+        "Rhizophagus irregularis"
+      ],
+      "seed_topic": "mineral_associated_carbon",
+      "matches": [
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.236,
+          "level": "low",
+          "reason": "关键词命中：mineral-associated organic carbon soil",
+          "keyword_hits": [
+            "mineral-associated organic carbon soil"
+          ]
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.125,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "mineral_associated_carbon",
+        "topic_name": "矿物结合态碳",
+        "score": 0.236,
+        "level": "low",
+        "reason": "关键词命中：mineral-associated organic carbon soil",
+        "keyword_hits": [
+          "mineral-associated organic carbon soil"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "请打开论文链接查看方法细节。",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：mineral-associated organic carbon soil"
+      },
+      "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "last_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "retained_from_previous_run": false
+    },
+    {
+      "id": "doi:10.1016/j.still.2026.107252",
+      "source": "OpenAlex",
+      "title": "Initial soil carbon levels regulate the divergent soil organic carbon responses to afforestation through mineral-associated organic carbon",
+      "authors": [
+        "Wenwen Lv",
+        "Jiwei Li",
+        "Hailong Zhang",
+        "Yang Liao",
+        "W. Ge",
+        "J. Lu",
+        "Su Wang",
+        "Ruihua Bai",
+        "Jianzhao Wu",
+        "Zhouping Shangguan",
+        "Lei Deng"
+      ],
+      "summary": "",
+      "published": "2026-05-04T00:00:00+00:00",
+      "updated": "2026-05-04T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.1016/j.still.2026.107252",
+      "pdf_url": "https://doi.org/10.1016/j.still.2026.107252",
+      "categories": [
+        "Soil and Tillage Research",
+        "Soil Carbon and Nitrogen Dynamics",
+        "Agroforestry and silvopastoral systems",
+        "Fire effects on ecosystems",
+        "Soil carbon",
+        "Total organic carbon",
+        "Carbon fibers",
+        "Afforestation",
+        "Soil organic matter",
+        "Dissolved organic carbon"
+      ],
+      "seed_topic": "mineral_associated_carbon",
+      "matches": [
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.236,
+          "level": "low",
+          "reason": "关键词命中：mineral-associated organic carbon soil",
+          "keyword_hits": [
+            "mineral-associated organic carbon soil"
+          ]
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.125,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "mineral_associated_carbon",
+        "topic_name": "矿物结合态碳",
+        "score": 0.236,
+        "level": "low",
+        "reason": "关键词命中：mineral-associated organic carbon soil",
+        "keyword_hits": [
+          "mineral-associated organic carbon soil"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "请打开论文链接查看方法细节。",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：mineral-associated organic carbon soil"
+      },
+      "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "last_seen_at": "2026-05-29T14:12:50.386040+00:00",
+      "retained_from_previous_run": false
+    }
+  ],
   "stats": {
-    "paper_count": 0,
-    "new_paper_count": 0,
-    "days": 1,
+    "paper_count": 23,
+    "new_paper_count": 23,
+    "days": 30,
     "collection_mode": "lookback",
-    "collection_cutoff_iso": "2026-05-28T13:18:05.644552+00:00",
+    "collection_cutoff_iso": "2026-04-29T14:12:50.386040+00:00",
     "max_per_topic": 25,
     "llm_enabled": false,
     "llm_concurrency": 2,
     "recent_history_days": 45,
-    "successful_fetches": 1,
-    "failed_fetches": 3,
+    "successful_fetches": 4,
+    "failed_fetches": 0,
+    "arxiv_successful_fetches": 0,
+    "arxiv_failed_fetches": 0,
+    "openalex_successful_fetches": 4,
+    "openalex_failed_fetches": 0,
+    "crossref_successful_fetches": 0,
+    "crossref_failed_fetches": 0,
     "retained_paper_count": 0,
     "retained_recent_low_count": 0,
-    "dropped_low_relevance_count": 1,
+    "dropped_low_relevance_count": 0,
     "max_stored_papers": 800,
     "max_data_bytes": 8388608,
-    "data_bytes": 4454,
+    "data_bytes": 111426,
     "storage_trimmed_count": 0,
     "storage_trimmed_by_level": {
       "high": 0,

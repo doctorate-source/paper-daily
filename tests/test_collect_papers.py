@@ -4,15 +4,27 @@ import urllib.error
 import unittest
 
 from scripts.collect_papers import (
+    Topic,
+    arxiv_query_for_topic,
     arxiv_retry_wait_seconds,
     collection_cutoff,
+    crossref_authors,
+    crossref_date,
+    crossref_query_for_topic,
+    inverted_index_to_text,
     is_retryable_arxiv_error,
     merge_with_retained_papers,
+    openalex_authors,
+    openalex_categories,
+    openalex_query_for_topic,
+    phrase_terms_present,
+    score_paper,
+    strip_markup,
     trim_papers_for_storage,
 )
 
 
-def paper(paper_id: str, level: str, published: str) -> dict:
+def paper(paper_id: str, level: str, published: str, keyword_hits: list[str] | None = None) -> dict:
     return {
         "id": paper_id,
         "title": paper_id,
@@ -23,6 +35,7 @@ def paper(paper_id: str, level: str, published: str) -> dict:
             "score": {"high": 0.9, "medium": 0.5, "low": 0.2}[level],
             "level": level,
             "reason": "test",
+            "keyword_hits": keyword_hits or [],
         },
         "matches": [],
         "chinese_summary": {},
@@ -75,7 +88,90 @@ class RetentionTest(unittest.TestCase):
         self.assertTrue(is_retryable_arxiv_error(TimeoutError("timed out")))
         self.assertFalse(is_retryable_arxiv_error(not_found))
 
-    def test_merge_retains_previous_high_medium_and_recent_low(self) -> None:
+    def test_arxiv_query_prefers_keywords_without_category_gate(self) -> None:
+        topic = Topic(
+            id="soil_carbon",
+            name="Soil carbon",
+            description="",
+            keywords=["soil organic carbon", "remote sensing"],
+            arxiv_categories=["cs.LG", "stat.ML"],
+        )
+
+        query = arxiv_query_for_topic(topic)
+
+        self.assertIn('all:"soil organic carbon"', query)
+        self.assertIn('all:"remote sensing"', query)
+        self.assertNotIn("cat:cs.LG", query)
+        self.assertNotIn(" AND ", query)
+
+    def test_crossref_helpers_normalize_metadata(self) -> None:
+        item = {
+            "published-online": {"date-parts": [[2026, 5, 29]]},
+            "author": [{"given": "Jane", "family": "Doe"}],
+        }
+
+        self.assertEqual(crossref_date(item), "2026-05-29T00:00:00+00:00")
+        self.assertEqual(crossref_authors(item), ["Jane Doe"])
+        self.assertEqual(strip_markup("<jats:p>Soil &amp; carbon</jats:p>"), "Soil & carbon")
+
+    def test_crossref_query_uses_topic_keywords(self) -> None:
+        topic = Topic(
+            id="soil_carbon",
+            name="Soil carbon",
+            description="",
+            keywords=["soil organic carbon", "mineral-associated organic carbon"],
+            arxiv_categories=[],
+        )
+
+        self.assertEqual(
+            crossref_query_for_topic(topic),
+            "soil organic carbon OR mineral-associated organic carbon",
+        )
+
+    def test_openalex_helpers_normalize_metadata(self) -> None:
+        item = {
+            "authorships": [{"author": {"display_name": "Jane Doe"}}],
+            "primary_location": {"source": {"display_name": "Remote Sensing"}},
+            "primary_topic": {"display_name": "Digital Soil Mapping"},
+            "topics": [{"display_name": "Soil Carbon"}],
+            "keywords": [{"display_name": "Remote sensing"}],
+        }
+
+        self.assertEqual(inverted_index_to_text({"Soil": [0], "carbon": [2], "organic": [1]}), "Soil organic carbon")
+        self.assertEqual(openalex_authors(item), ["Jane Doe"])
+        self.assertEqual(openalex_categories(item), ["Remote Sensing", "Digital Soil Mapping", "Soil Carbon", "Remote sensing"])
+
+    def test_openalex_query_uses_first_keyword(self) -> None:
+        topic = Topic(
+            id="soil_carbon",
+            name="Soil carbon",
+            description="",
+            keywords=["soil organic carbon remote sensing", "soil carbon mapping"],
+            arxiv_categories=[],
+        )
+
+        self.assertEqual(openalex_query_for_topic(topic), "soil organic carbon remote sensing")
+
+    def test_keyword_score_accepts_non_contiguous_phrase_terms(self) -> None:
+        topic = Topic(
+            id="remote_sensing",
+            name="Remote sensing",
+            description="",
+            keywords=["soil organic carbon remote sensing"],
+            arxiv_categories=[],
+        )
+        paper = {
+            "title": "Prediction of Surface Soil Organic Carbon Based on Multi-Temporal Remote Sensing Data",
+            "summary": "",
+            "categories": [],
+        }
+
+        match = score_paper(topic, paper)
+
+        self.assertTrue(phrase_terms_present("soil organic carbon remote sensing", paper["title"]))
+        self.assertEqual(match["keyword_hits"], ["soil organic carbon remote sensing"])
+
+    def test_merge_retains_previous_high_medium_and_drops_existing_low(self) -> None:
         now = dt.datetime(2026, 5, 28, tzinfo=dt.timezone.utc)
         stale_low = paper("old-low", "low", "2026-03-01T00:00:00+00:00")
         stale_low["first_seen_at"] = "2026-03-02T00:00:00+00:00"
@@ -90,16 +186,16 @@ class RetentionTest(unittest.TestCase):
         }
 
         merged, stats = merge_with_retained_papers(
-            [paper("new-low", "low", "2026-05-28T00:00:00+00:00")],
+            [paper("new-low", "low", "2026-05-28T00:00:00+00:00", ["soil organic carbon"])],
             existing,
             now,
             recent_history_days=45,
         )
 
-        self.assertEqual({item["id"] for item in merged}, {"new-low", "old-high", "old-medium", "recent-low"})
-        self.assertEqual(stats["retained_paper_count"], 3)
-        self.assertEqual(stats["retained_recent_low_count"], 1)
-        self.assertEqual(stats["dropped_low_relevance_count"], 1)
+        self.assertEqual({item["id"] for item in merged}, {"new-low", "old-high", "old-medium"})
+        self.assertEqual(stats["retained_paper_count"], 2)
+        self.assertEqual(stats["retained_recent_low_count"], 0)
+        self.assertEqual(stats["dropped_low_relevance_count"], 2)
         self.assertTrue(next(item for item in merged if item["id"] == "old-high")["retained_from_previous_run"])
 
     def test_collection_cutoff_uses_previous_run_for_incremental_mode(self) -> None:

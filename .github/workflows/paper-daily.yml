@@ -10,7 +10,7 @@ on:
       lookback_days:
         description: "首次初始化要回看最近几天的论文"
         required: false
-        default: "7"
+        default: "30"
   issues:
     types: [opened, edited, reopened]
 
@@ -47,12 +47,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CONFIG_ISSUE_TITLE: Research Interests
-          LOOKBACK_DAYS: ${{ github.event_name == 'workflow_dispatch' && inputs.lookback_days || vars.LOOKBACK_DAYS || '1' }}
+          LOOKBACK_DAYS: ${{ github.event_name == 'workflow_dispatch' && inputs.lookback_days || vars.LOOKBACK_DAYS || '30' }}
           MAX_PER_TOPIC: ${{ vars.MAX_PER_TOPIC || '25' }}
           MAX_SUMMARIES: ${{ vars.MAX_SUMMARIES || '40' }}
           MAX_STORED_PAPERS: ${{ vars.MAX_STORED_PAPERS || '800' }}
           MAX_DATA_BYTES: ${{ vars.MAX_DATA_BYTES || '8388608' }}
           RECENT_HISTORY_DAYS: ${{ vars.RECENT_HISTORY_DAYS || '45' }}
+          ENABLE_ARXIV: ${{ vars.ENABLE_ARXIV || 'false' }}
+          ENABLE_OPENALEX: ${{ vars.ENABLE_OPENALEX || 'true' }}
+          ENABLE_CROSSREF: ${{ vars.ENABLE_CROSSREF || 'false' }}
           INCREMENTAL_SINCE_LAST_RUN: ${{ github.event_name == 'schedule' && 'true' || vars.INCREMENTAL_SINCE_LAST_RUN || 'false' }}
           LLM_CONCURRENCY: ${{ vars.LLM_CONCURRENCY || '2' }}
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}

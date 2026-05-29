@@ -22,6 +22,8 @@ from typing import Any
 
 ARXIV_API_URL = "https://export.arxiv.org/api/query"
 ARXIV_NS = {"atom": "http://www.w3.org/2005/Atom", "arxiv": "http://arxiv.org/schemas/atom"}
+CROSSREF_API_URL = "https://api.crossref.org/works"
+OPENALEX_API_URL = "https://api.openalex.org/works"
 DEFAULT_CONFIG = Path("config/interests.json")
 DEFAULT_OUTPUT = Path("web/data/papers.json")
 RETAINED_MATCH_LEVELS = {"high", "medium"}
@@ -149,7 +151,7 @@ def arxiv_query_for_topic(topic: Topic) -> str:
     parts = []
     if keyword_terms:
         parts.append("(" + " OR ".join(keyword_terms) + ")")
-    if category_terms:
+    elif category_terms:
         parts.append("(" + " OR ".join(category_terms) + ")")
     return " AND ".join(parts) if parts else f'all:"{topic.name}"'
 
@@ -246,6 +248,225 @@ def fetch_arxiv(topic: Topic, max_results: int) -> list[dict[str, Any]]:
     return papers
 
 
+def strip_markup(value: str) -> str:
+    text = re.sub(r"<[^>]+>", " ", html.unescape(value or ""))
+    return normalize_space(text)
+
+
+def crossref_date(item: dict[str, Any]) -> str:
+    for field in ("published-online", "published-print", "published", "issued", "created", "deposited"):
+        date_parts = item.get(field, {}).get("date-parts", [])
+        if not date_parts or not date_parts[0]:
+            continue
+        parts = date_parts[0]
+        try:
+            year = int(parts[0])
+            month = int(parts[1]) if len(parts) > 1 else 1
+            day = int(parts[2]) if len(parts) > 2 else 1
+            return dt.datetime(year, month, day, tzinfo=dt.timezone.utc).isoformat()
+        except (TypeError, ValueError):
+            continue
+    return ""
+
+
+def crossref_authors(item: dict[str, Any]) -> list[str]:
+    authors = []
+    for author in item.get("author", [])[:12]:
+        given = str(author.get("given", "")).strip()
+        family = str(author.get("family", "")).strip()
+        name = normalize_space(f"{given} {family}")
+        if name:
+            authors.append(name)
+    return authors
+
+
+def crossref_query_for_topic(topic: Topic) -> str:
+    terms = topic.keywords[:6] or [topic.name]
+    return " OR ".join(terms)
+
+
+def fetch_crossref(topic: Topic, max_results: int, cutoff: dt.datetime, now: dt.datetime) -> list[dict[str, Any]]:
+    params = {
+        "query.bibliographic": crossref_query_for_topic(topic),
+        "filter": ",".join(
+            [
+                f"from-pub-date:{cutoff.date().isoformat()}",
+                f"until-pub-date:{now.date().isoformat()}",
+                "type:journal-article",
+            ]
+        ),
+        "rows": str(max_results),
+        "sort": "published",
+        "order": "desc",
+    }
+    url = f"{CROSSREF_API_URL}?{urllib.parse.urlencode(params)}"
+    req = urllib.request.Request(
+        url,
+        headers={
+            "Accept": "application/json",
+            "User-Agent": "paper-daily-collector/1.0 (+https://github.com/Futuresxy/paper-daily)",
+        },
+    )
+    timeout_seconds = float(os.getenv("CROSSREF_TIMEOUT_SECONDS", "45"))
+    with urllib.request.urlopen(req, timeout=timeout_seconds) as resp:
+        payload = json.loads(resp.read().decode("utf-8"))
+
+    papers = []
+    for item in payload.get("message", {}).get("items", []):
+        doi = str(item.get("DOI", "")).strip()
+        title = normalize_space(" ".join(str(part) for part in item.get("title", []) if part))
+        if not doi or not title:
+            continue
+        abstract = strip_markup(str(item.get("abstract", "")))
+        published = crossref_date(item)
+        paper_url = str(item.get("URL") or f"https://doi.org/{doi}")
+        pdf_url = ""
+        for link in item.get("link", []):
+            if str(link.get("content-type", "")).lower() == "application/pdf":
+                pdf_url = str(link.get("URL", ""))
+                break
+        categories = [str(value) for value in item.get("subject", [])[:8] if value]
+        journal = normalize_space(" ".join(str(part) for part in item.get("container-title", []) if part))
+        if journal:
+            categories.insert(0, journal)
+        papers.append(
+            {
+                "id": f"doi:{doi.lower()}",
+                "source": "Crossref",
+                "title": title,
+                "authors": crossref_authors(item),
+                "summary": abstract,
+                "published": published,
+                "updated": published,
+                "paper_url": paper_url,
+                "pdf_url": pdf_url or paper_url,
+                "categories": categories,
+                "seed_topic": topic.id,
+            }
+        )
+    return papers
+
+
+def inverted_index_to_text(index: dict[str, list[int]] | None) -> str:
+    if not index:
+        return ""
+    words: list[tuple[int, str]] = []
+    for word, positions in index.items():
+        for position in positions:
+            words.append((int(position), str(word)))
+    words.sort(key=lambda item: item[0])
+    return normalize_space(" ".join(word for _, word in words))
+
+
+def openalex_queries_for_topic(topic: Topic) -> list[str]:
+    queries = topic.keywords[:6] or [topic.name]
+    seen = set()
+    unique = []
+    for query in queries:
+        normalized = normalize_space(str(query))
+        key = normalized.lower()
+        if normalized and key not in seen:
+            seen.add(key)
+            unique.append(normalized)
+    return unique
+
+
+def openalex_query_for_topic(topic: Topic) -> str:
+    queries = openalex_queries_for_topic(topic)
+    return queries[0] if queries else topic.name
+
+
+def openalex_authors(item: dict[str, Any]) -> list[str]:
+    authors = []
+    for authorship in item.get("authorships", [])[:12]:
+        name = str((authorship.get("author") or {}).get("display_name", "")).strip()
+        if name:
+            authors.append(name)
+    return authors
+
+
+def openalex_categories(item: dict[str, Any]) -> list[str]:
+    categories: list[str] = []
+    location = item.get("primary_location") or {}
+    source = location.get("source") or {}
+    journal = str(source.get("display_name", "")).strip()
+    if journal:
+        categories.append(journal)
+    primary_topic = item.get("primary_topic") or {}
+    topic_name = str(primary_topic.get("display_name", "")).strip()
+    if topic_name:
+        categories.append(topic_name)
+    for topic in item.get("topics", [])[:6]:
+        name = str(topic.get("display_name", "")).strip()
+        if name and name not in categories:
+            categories.append(name)
+    for keyword in item.get("keywords", [])[:6]:
+        name = str(keyword.get("display_name", "")).strip()
+        if name and name not in categories:
+            categories.append(name)
+    return categories
+
+
+def fetch_openalex(topic: Topic, max_results: int, cutoff: dt.datetime, now: dt.datetime) -> list[dict[str, Any]]:
+    papers = []
+    timeout_seconds = float(os.getenv("OPENALEX_TIMEOUT_SECONDS", "45"))
+    headers = {
+        "Accept": "application/json",
+        "User-Agent": "paper-daily-collector/1.0 (+https://github.com/Futuresxy/paper-daily)",
+    }
+    for index, query in enumerate(openalex_queries_for_topic(topic)):
+        if index:
+            time.sleep(float(os.getenv("OPENALEX_QUERY_DELAY_SECONDS", "0.25")))
+        params = {
+            "search.title": query,
+            "filter": ",".join(
+                [
+                    f"from_publication_date:{cutoff.date().isoformat()}",
+                    f"to_publication_date:{now.date().isoformat()}",
+                    "type:article",
+                ]
+            ),
+            "per-page": str(max_results),
+            "sort": "publication_date:desc",
+        }
+        mailto = os.getenv("OPENALEX_MAILTO", "")
+        if mailto:
+            params["mailto"] = mailto
+        url = f"{OPENALEX_API_URL}?{urllib.parse.urlencode(params)}"
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req, timeout=timeout_seconds) as resp:
+            payload = json.loads(resp.read().decode("utf-8"))
+
+        for item in payload.get("results", []):
+            title = normalize_space(str(item.get("title") or item.get("display_name") or ""))
+            paper_id = str((item.get("ids") or {}).get("doi") or item.get("doi") or item.get("id") or "").strip()
+            if not title or not paper_id:
+                continue
+            location = item.get("primary_location") or {}
+            open_access = item.get("open_access") or {}
+            paper_url = str(location.get("landing_page_url") or open_access.get("oa_url") or item.get("doi") or item.get("id"))
+            pdf_url = str(location.get("pdf_url") or open_access.get("oa_url") or paper_url)
+            published = str(item.get("publication_date") or "")
+            if published:
+                published = f"{published}T00:00:00+00:00"
+            papers.append(
+                {
+                    "id": paper_id.replace("https://doi.org/", "doi:").lower(),
+                    "source": "OpenAlex",
+                    "title": title,
+                    "authors": openalex_authors(item),
+                    "summary": inverted_index_to_text(item.get("abstract_inverted_index")),
+                    "published": published,
+                    "updated": published,
+                    "paper_url": paper_url,
+                    "pdf_url": pdf_url,
+                    "categories": openalex_categories(item),
+                    "seed_topic": topic.id,
+                }
+            )
+    return dedupe_papers(papers)
+
+
 def parse_datetime(value: str | None) -> dt.datetime | None:
     if not value:
         return None
@@ -291,13 +512,21 @@ def collection_cutoff(
     return now - dt.timedelta(days=max(0, days)), "lookback"
 
 
+def phrase_terms_present(keyword: str, haystack: str) -> bool:
+    terms = re.findall(r"[a-zA-Z0-9]+", keyword.lower())
+    if len(terms) < 2:
+        return False
+    haystack_terms = set(re.findall(r"[a-zA-Z0-9]+", haystack.lower()))
+    return all(term in haystack_terms for term in terms)
+
+
 def keyword_score(topic: Topic, paper: dict[str, Any]) -> tuple[float, list[str]]:
     haystack = f"{paper.get('title', '')} {paper.get('summary', '')}".lower()
     hits = []
     weighted = 0.0
     for keyword in topic.keywords:
         normalized = keyword.lower()
-        if normalized in haystack:
+        if normalized in haystack or phrase_terms_present(normalized, haystack):
             hits.append(keyword)
             weighted += min(1.0, max(0.35, len(normalized.split()) / 5))
     score = min(1.0, weighted / max(2.0, min(5.0, len(topic.keywords) / 2)))
@@ -654,28 +883,71 @@ def collect(
     all_candidates = []
     successful_fetches = 0
     failed_fetches = 0
+    source_stats = {
+        "arxiv_successful_fetches": 0,
+        "arxiv_failed_fetches": 0,
+        "openalex_successful_fetches": 0,
+        "openalex_failed_fetches": 0,
+        "crossref_successful_fetches": 0,
+        "crossref_failed_fetches": 0,
+    }
+    arxiv_enabled = env_flag("ENABLE_ARXIV", True)
+    openalex_enabled = env_flag("ENABLE_OPENALEX", True)
+    crossref_enabled = env_flag("ENABLE_CROSSREF", False)
+    arxiv_stopped = False
     for index, topic in enumerate(topics):
-        if index:
+        if arxiv_enabled and not arxiv_stopped and index:
             time.sleep(float(os.getenv("ARXIV_DELAY_SECONDS", "15")))
-        print(f"Fetching arXiv papers for topic: {topic.name}", flush=True)
-        try:
-            topic_papers = fetch_arxiv(topic, max_per_topic)
-            all_candidates.extend(topic_papers)
-            successful_fetches += 1
-        except Exception as exc:
-            failed_fetches += 1
-            print(f"Warning: arXiv request failed for {topic.name}: {exc}", file=sys.stderr)
-            if should_stop_arxiv_fetches(exc):
-                skipped = len(topics) - index - 1
-                failed_fetches += skipped
-                if skipped:
-                    print(
-                        f"Stopping arXiv fetches after {exc}; skipped {skipped} remaining topic(s) to avoid further throttling.",
-                        file=sys.stderr,
-                    )
-                break
+        if arxiv_enabled and not arxiv_stopped:
+            print(f"Fetching arXiv papers for topic: {topic.name}", flush=True)
+            try:
+                topic_papers = fetch_arxiv(topic, max_per_topic)
+                all_candidates.extend(topic_papers)
+                successful_fetches += 1
+                source_stats["arxiv_successful_fetches"] += 1
+            except Exception as exc:
+                failed_fetches += 1
+                source_stats["arxiv_failed_fetches"] += 1
+                print(f"Warning: arXiv request failed for {topic.name}: {exc}", file=sys.stderr)
+                if should_stop_arxiv_fetches(exc):
+                    arxiv_stopped = True
+                    skipped = len(topics) - index - 1
+                    source_stats["arxiv_failed_fetches"] += skipped
+                    if skipped:
+                        print(
+                            f"Stopping arXiv fetches after {exc}; continuing with other sources for {skipped} remaining topic(s).",
+                            file=sys.stderr,
+                        )
 
-    if failed_fetches == len(topics) and existing_payload:
+        if openalex_enabled:
+            if index:
+                time.sleep(float(os.getenv("OPENALEX_DELAY_SECONDS", "1")))
+            print(f"Fetching OpenAlex papers for topic: {topic.name}", flush=True)
+            try:
+                topic_papers = fetch_openalex(topic, max_per_topic, cutoff, now)
+                all_candidates.extend(topic_papers)
+                successful_fetches += 1
+                source_stats["openalex_successful_fetches"] += 1
+            except Exception as exc:
+                failed_fetches += 1
+                source_stats["openalex_failed_fetches"] += 1
+                print(f"Warning: OpenAlex request failed for {topic.name}: {exc}", file=sys.stderr)
+
+        if crossref_enabled:
+            if index:
+                time.sleep(float(os.getenv("CROSSREF_DELAY_SECONDS", "1")))
+            print(f"Fetching Crossref papers for topic: {topic.name}", flush=True)
+            try:
+                topic_papers = fetch_crossref(topic, max_per_topic, cutoff, now)
+                all_candidates.extend(topic_papers)
+                successful_fetches += 1
+                source_stats["crossref_successful_fetches"] += 1
+            except Exception as exc:
+                failed_fetches += 1
+                source_stats["crossref_failed_fetches"] += 1
+                print(f"Warning: Crossref request failed for {topic.name}: {exc}", file=sys.stderr)
+
+    if successful_fetches == 0 and failed_fetches > 0 and existing_payload:
         existing = existing_payload
         if existing.get("papers"):
             print("All sources failed; preserving existing paper data.", file=sys.stderr)
@@ -691,9 +963,10 @@ def collect(
             existing_stats = existing.setdefault("stats", {})
             existing_stats.update(
                 {
-                    "last_error": "All arXiv requests failed.",
+                    "last_error": "All paper sources failed.",
                     "successful_fetches": successful_fetches,
                     "failed_fetches": failed_fetches,
+                    **source_stats,
                     **retention_stats,
                 }
             )
@@ -776,6 +1049,7 @@ def collect(
             "recent_history_days": recent_history_days,
             "successful_fetches": successful_fetches,
             "failed_fetches": failed_fetches,
+            **source_stats,
             **retention_stats,
         },
     }
