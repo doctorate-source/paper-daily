@@ -107,6 +107,9 @@ def extract_json_block(markdown: str) -> dict[str, Any] | None:
 
 
 def load_issue_config(default_config: dict[str, Any]) -> dict[str, Any]:
+    if os.getenv("CONFIG_SOURCE", "file").strip().lower() != "issue":
+        return default_config
+
     token = os.getenv("GITHUB_TOKEN", "")
     repository = os.getenv("GITHUB_REPOSITORY", "")
     title = os.getenv("CONFIG_ISSUE_TITLE", "Research Interests")
@@ -552,10 +555,8 @@ def merge_with_retained_papers(
             and seen_at
             and (now.date() - seen_at.date()).days <= recent_history_days
         )
-        if should_keep_matched_paper(paper) and (best_match_level(paper) in RETAINED_MATCH_LEVELS or is_recent):
+        if should_keep_matched_paper(paper) and best_match_level(paper) in RETAINED_MATCH_LEVELS:
             retained_by_key[key] = paper
-            if is_recent and best_match_level(paper) not in RETAINED_MATCH_LEVELS:
-                retained_recent += 1
         else:
             dropped_low += 1
 
