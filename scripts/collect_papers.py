@@ -496,6 +496,17 @@ def best_match_level(paper: dict[str, Any]) -> str:
     return str((paper.get("best_match") or {}).get("level") or "low").lower()
 
 
+def has_keyword_hit(paper_or_match: dict[str, Any]) -> bool:
+    match = paper_or_match.get("best_match") if "best_match" in paper_or_match else paper_or_match
+    return bool((match or {}).get("keyword_hits"))
+
+
+def should_keep_matched_paper(paper_or_match: dict[str, Any]) -> bool:
+    match = paper_or_match.get("best_match") if "best_match" in paper_or_match else paper_or_match
+    level = str((match or {}).get("level") or "low").lower()
+    return level in RETAINED_MATCH_LEVELS or has_keyword_hit(paper_or_match)
+
+
 def load_existing_payload(output_path: Path) -> dict[str, Any]:
     if not output_path.exists():
         return {}
@@ -541,7 +552,7 @@ def merge_with_retained_papers(
             and seen_at
             and (now.date() - seen_at.date()).days <= recent_history_days
         )
-        if best_match_level(paper) in RETAINED_MATCH_LEVELS or is_recent:
+        if should_keep_matched_paper(paper) and (best_match_level(paper) in RETAINED_MATCH_LEVELS or is_recent):
             retained_by_key[key] = paper
             if is_recent and best_match_level(paper) not in RETAINED_MATCH_LEVELS:
                 retained_recent += 1
@@ -704,7 +715,7 @@ def collect(
             matches = [score_paper(topic, paper) for topic in topics]
             matches.sort(key=lambda item: item["score"], reverse=True)
             best_match = matches[0]
-            if best_match["score"] <= 0:
+            if not should_keep_matched_paper(best_match):
                 continue
             paper["matches"] = matches
             paper["best_match"] = best_match

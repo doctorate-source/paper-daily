@@ -3,96 +3,74 @@
     {
       "id": "iron_bound_carbon",
       "name": "铁结合态碳",
-      "description": "关注铁氧化物、活性铁、铁矿物与有机碳结合形成的铁结合态碳，以及铁还原、铁氧化和有机-铁复合过程对土壤有机碳稳定、封存与周转的影响。",
+      "description": "关注铁氧化物、活性铁和铁矿物介导的土壤有机碳稳定、封存、周转与模型预测，尤其关注铁结合有机碳、铁氧化还原过程和有机-铁复合物。",
       "keywords": [
-        "iron-bound carbon",
-        "iron associated organic carbon",
-        "Fe-bound organic carbon",
-        "reactive iron",
-        "iron oxides",
-        "ferrihydrite",
-        "goethite",
-        "organo-iron complexes",
+        "iron-bound soil organic carbon",
+        "iron associated soil organic carbon",
+        "Fe-bound organic carbon soil",
+        "reactive iron soil organic carbon",
+        "iron oxides soil carbon stabilization",
+        "organo-iron complexes soil carbon",
         "iron-mediated carbon stabilization",
-        "soil organic carbon stabilization"
+        "ferrihydrite organic carbon soil",
+        "goethite organic carbon soil",
+        "iron redox soil carbon"
       ],
-      "arxiv_categories": [
-        "physics.geo-ph",
-        "q-bio.PE",
-        "cs.LG",
-        "stat.ML"
-      ]
+      "arxiv_categories": ["physics.geo-ph", "q-bio.PE", "cs.LG", "stat.ML"]
     },
     {
       "id": "mineral_associated_carbon",
       "name": "矿物结合态碳",
-      "description": "关注矿物结合态有机碳、矿物相关有机质、黏土矿物和金属氧化物表面对有机碳吸附、保护、稳定和长期封存的机制。",
+      "description": "关注矿物结合态有机碳、矿物相关有机质、黏土矿物和金属氧化物表面对土壤有机碳吸附、保护、稳定、制图与预测的影响。",
       "keywords": [
-        "mineral-associated organic carbon",
-        "mineral associated organic matter",
-        "MAOC",
-        "organo-mineral interactions",
-        "soil carbon sequestration",
-        "soil organic carbon stabilization",
-        "clay minerals",
-        "mineral surfaces",
-        "carbon mineral association",
-        "particulate organic carbon"
+        "mineral-associated organic carbon soil",
+        "mineral associated organic matter soil",
+        "MAOC soil carbon",
+        "organo-mineral interactions soil carbon",
+        "mineral surfaces soil organic carbon",
+        "clay minerals soil organic carbon",
+        "carbon mineral association soil",
+        "soil carbon mineral protection",
+        "mineral-associated carbon prediction",
+        "soil organic carbon fractions"
       ],
-      "arxiv_categories": [
-        "physics.geo-ph",
-        "q-bio.PE",
-        "cs.LG",
-        "stat.ML"
-      ]
+      "arxiv_categories": ["physics.geo-ph", "q-bio.PE", "cs.LG", "stat.ML"]
     },
     {
       "id": "remote_sensing_retrieval_prediction",
       "name": "遥感反演与预测",
       "description": "关注基于卫星、多光谱、高光谱、近红外和时序遥感数据的土壤有机碳、土壤性质、植被与生态环境变量反演、制图和预测。",
       "keywords": [
-        "remote sensing retrieval",
-        "remote sensing inversion",
-        "soil organic carbon mapping",
-        "soil organic carbon prediction",
-        "hyperspectral remote sensing",
-        "multispectral remote sensing",
-        "satellite remote sensing",
-        "digital soil mapping",
-        "Sentinel-2",
-        "Landsat"
+        "soil organic carbon remote sensing",
+        "soil organic carbon mapping remote sensing",
+        "soil organic carbon prediction satellite",
+        "digital soil mapping remote sensing",
+        "hyperspectral soil organic carbon",
+        "multispectral soil carbon mapping",
+        "Sentinel-2 soil organic carbon",
+        "Landsat soil organic carbon",
+        "remote sensing soil properties prediction",
+        "soil carbon inversion remote sensing"
       ],
-      "arxiv_categories": [
-        "cs.CV",
-        "cs.LG",
-        "stat.ML",
-        "eess.IV",
-        "physics.geo-ph"
-      ]
+      "arxiv_categories": ["cs.CV", "cs.LG", "stat.ML", "eess.IV", "physics.geo-ph"]
     },
     {
       "id": "machine_learning_soil_carbon",
       "name": "机器学习",
-      "description": "关注机器学习、深度学习、时空建模和可解释 AI 在土壤碳、矿物结合态碳、铁结合态碳、遥感反演、预测制图和不确定性评估中的应用。",
+      "description": "关注机器学习、深度学习、时空建模和可解释 AI 在土壤有机碳、矿物结合态碳、铁结合态碳、遥感反演、预测制图和不确定性评估中的应用。",
       "keywords": [
-        "machine learning",
-        "deep learning",
-        "random forest",
-        "gradient boosting",
-        "Gaussian process",
-        "spatiotemporal prediction",
-        "uncertainty quantification",
-        "explainable AI",
-        "soil organic carbon prediction",
-        "remote sensing machine learning"
+        "soil organic carbon machine learning",
+        "soil carbon prediction machine learning",
+        "soil organic carbon deep learning",
+        "digital soil mapping machine learning",
+        "remote sensing soil carbon machine learning",
+        "soil organic carbon random forest",
+        "soil organic carbon gradient boosting",
+        "soil carbon uncertainty quantification",
+        "explainable AI soil carbon",
+        "spatiotemporal soil carbon prediction"
       ],
-      "arxiv_categories": [
-        "cs.LG",
-        "stat.ML",
-        "cs.CV",
-        "eess.IV",
-        "physics.geo-ph"
-      ]
+      "arxiv_categories": ["cs.LG", "stat.ML", "cs.CV", "eess.IV", "physics.geo-ph"]
     }
   ]
 }
