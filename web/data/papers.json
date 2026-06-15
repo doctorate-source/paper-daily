@@ -1,6 +1,6 @@
 {
-  "generated_at": "Sun, 14 Jun 2026 10:33:09 +0000",
-  "generated_at_iso": "2026-06-14T10:33:09.559021+00:00",
+  "generated_at": "Mon, 15 Jun 2026 17:34:18 +0000",
+  "generated_at_iso": "2026-06-15T17:34:18.824230+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -865,12 +865,12 @@
     "llm_enabled": false,
     "llm_concurrency": 2,
     "recent_history_days": 45,
-    "successful_fetches": 4,
-    "failed_fetches": 0,
+    "successful_fetches": 0,
+    "failed_fetches": 4,
     "arxiv_successful_fetches": 0,
     "arxiv_failed_fetches": 0,
-    "openalex_successful_fetches": 4,
-    "openalex_failed_fetches": 0,
+    "openalex_successful_fetches": 0,
+    "openalex_failed_fetches": 4,
     "crossref_successful_fetches": 0,
     "crossref_failed_fetches": 0,
     "retained_paper_count": 8,
@@ -878,13 +878,14 @@
     "dropped_low_relevance_count": 0,
     "max_stored_papers": 800,
     "max_data_bytes": 8388608,
-    "data_bytes": 51163,
+    "data_bytes": 51210,
     "storage_trimmed_count": 0,
     "storage_trimmed_by_level": {
       "high": 0,
       "medium": 0,
       "low": 0,
       "unknown": 0
-    }
+    },
+    "last_error": "All paper sources failed."
   }
 }
