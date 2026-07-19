@@ -1,6 +1,6 @@
 {
-  "generated_at": "Sat, 18 Jul 2026 22:38:55 +0000",
-  "generated_at_iso": "2026-07-18T22:38:55.070521+00:00",
+  "generated_at": "Sun, 19 Jul 2026 22:41:28 +0000",
+  "generated_at_iso": "2026-07-19T22:41:28.729834+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -853,14 +853,98 @@
       "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
       "last_seen_at": "2026-05-29T14:15:08.044977+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "doi:10.12928/telkomnika.v24i4.27724",
+      "source": "OpenAlex",
+      "title": "Interpretable machine learning for digital soil pH mapping using an optimized AdaBoost algorithm",
+      "authors": [
+        "Zakiyyan Zain Alkaf",
+        "A’isya Nur Aulia Yusuf",
+        "Elsa Sari Hayunah Nurdiniyah",
+        "Tri Wisudawati"
+      ],
+      "summary": "",
+      "published": "2026-07-19T00:00:00+00:00",
+      "updated": "2026-07-19T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.12928/telkomnika.v24i4.27724",
+      "pdf_url": "https://doi.org/10.12928/telkomnika.v24i4.27724",
+      "categories": [
+        "TELKOMNIKA (Telecommunication Computing Electronics and Control)",
+        "Soil Geostatistics and Mapping",
+        "Neural Networks and Applications",
+        "Machine Learning in Materials Science",
+        "AdaBoost",
+        "Pattern recognition (psychology)",
+        "Support vector machine",
+        "Random forest"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.256,
+          "level": "low",
+          "reason": "关键词命中：digital soil mapping machine learning",
+          "keyword_hits": [
+            "digital soil mapping machine learning"
+          ]
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.031,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.031,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "machine_learning_soil_carbon",
+        "topic_name": "机器学习",
+        "score": 0.256,
+        "level": "low",
+        "reason": "关键词命中：digital soil mapping machine learning",
+        "keyword_hits": [
+          "digital soil mapping machine learning"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "请打开论文链接查看方法细节。",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：digital soil mapping machine learning"
+      },
+      "first_seen_at": "2026-07-19T22:41:28.729834+00:00",
+      "last_seen_at": "2026-07-19T22:41:28.729834+00:00",
+      "retained_from_previous_run": false
     }
   ],
   "stats": {
-    "paper_count": 8,
-    "new_paper_count": 0,
+    "paper_count": 9,
+    "new_paper_count": 1,
     "days": 30,
     "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-07-17T22:39:31.381414+00:00",
+    "collection_cutoff_iso": "2026-07-18T22:38:55.070521+00:00",
     "max_per_topic": 25,
     "llm_enabled": false,
     "llm_concurrency": 2,
@@ -878,7 +962,7 @@
     "dropped_low_relevance_count": 0,
     "max_stored_papers": 800,
     "max_data_bytes": 8388608,
-    "data_bytes": 51163,
+    "data_bytes": 54470,
     "storage_trimmed_count": 0,
     "storage_trimmed_by_level": {
       "high": 0,
