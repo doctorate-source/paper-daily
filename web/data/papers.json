@@ -1,6 +1,6 @@
 {
-  "generated_at": "Mon, 10 Aug 2026 22:26:38 +0000",
-  "generated_at_iso": "2026-08-10T22:26:38.978955+00:00",
+  "generated_at": "Tue, 11 Aug 2026 22:31:47 +0000",
+  "generated_at_iso": "2026-08-11T22:31:47.823399+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -853,14 +853,103 @@
       "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
       "last_seen_at": "2026-05-29T14:15:08.044977+00:00",
       "retained_from_previous_run": true
+    },
+    {
+      "id": "doi:10.1016/j.geoderma.2026.117959",
+      "source": "OpenAlex",
+      "title": "Soil-dependent short-term transfer of fertilizer nitrogen into microbial biomass and mineral-associated organic matter",
+      "authors": [
+        "Manjot Kaur Rekhi",
+        "Amanda B. Daly",
+        "Brian B. McSpadden Gardener",
+        "Serita D. Frey",
+        "Lee Hildebrand",
+        "Marty R. Schmer",
+        "A. Stuart Grandy"
+      ],
+      "summary": "",
+      "published": "2026-08-11T00:00:00+00:00",
+      "updated": "2026-08-11T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.1016/j.geoderma.2026.117959",
+      "pdf_url": "https://doi.org/10.1016/j.geoderma.2026.117959",
+      "categories": [
+        "Geoderma",
+        "Soil Carbon and Nitrogen Dynamics",
+        "Legume Nitrogen Fixing Symbiosis",
+        "Soil and Water Nutrient Dynamics",
+        "Organic matter",
+        "Nitrogen",
+        "Biomass (ecology)",
+        "Fertilizer",
+        "Organic fertilizer",
+        "Dry matter"
+      ],
+      "seed_topic": "mineral_associated_carbon",
+      "matches": [
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.256,
+          "level": "low",
+          "reason": "关键词命中：mineral associated organic matter soil",
+          "keyword_hits": [
+            "mineral associated organic matter soil"
+          ]
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.094,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.062,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.062,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "mineral_associated_carbon",
+        "topic_name": "矿物结合态碳",
+        "score": 0.256,
+        "level": "low",
+        "reason": "关键词命中：mineral associated organic matter soil",
+        "keyword_hits": [
+          "mineral associated organic matter soil"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "请打开论文链接查看方法细节。",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：mineral associated organic matter soil"
+      },
+      "first_seen_at": "2026-08-11T22:31:47.823399+00:00",
+      "last_seen_at": "2026-08-11T22:31:47.823399+00:00",
+      "retained_from_previous_run": false
     }
   ],
   "stats": {
-    "paper_count": 8,
-    "new_paper_count": 0,
+    "paper_count": 9,
+    "new_paper_count": 1,
     "days": 30,
     "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-08-09T22:19:56.587209+00:00",
+    "collection_cutoff_iso": "2026-08-10T22:26:38.978955+00:00",
     "max_per_topic": 25,
     "llm_enabled": false,
     "llm_concurrency": 2,
@@ -878,7 +967,7 @@
     "dropped_low_relevance_count": 0,
     "max_stored_papers": 800,
     "max_data_bytes": 8388608,
-    "data_bytes": 51163,
+    "data_bytes": 54530,
     "storage_trimmed_count": 0,
     "storage_trimmed_by_level": {
       "high": 0,
