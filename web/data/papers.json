@@ -1,6 +1,6 @@
 {
-  "generated_at": "Wed, 16 Sep 2026 23:58:13 +0000",
-  "generated_at_iso": "2026-09-16T23:58:13.519648+00:00",
+  "generated_at": "Thu, 17 Sep 2026 23:48:08 +0000",
+  "generated_at_iso": "2026-09-17T23:48:08.889489+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -395,6 +395,98 @@
       "retained_from_previous_run": true
     },
     {
+      "id": "doi:10.3390/rs18183199",
+      "source": "OpenAlex",
+      "title": "Spatial Prediction and Performance Comparison of Soil Organic Carbon in High-Latitude Forest Soils Based on Multiple Feature Selection Methods and Machine Learning Models",
+      "authors": [
+        "Fan Qi",
+        "Ye Ma",
+        "Miao Li"
+      ],
+      "summary": "Soil organic carbon (SOC) in permafrost regions is a critical component of terrestrial carbon reservoirs, and spatially explicit multi-depth mapping is essential for identifying subsurface carbon emission hotspots and supporting carbon neutrality accounting. The Kamalan River Basin in the Greater Khingan Mountains, situated in a discontinuous permafrost zone with relatively high SOC stocks and strong sensitivity to climate warming, was selected as the study area. A total of 90 field sampling points were collected and integrated with Sentinel-1 Synthetic Aperture Radar (SAR) imagery, Sentinel-2 multispectral imagery, and topographic data, yielding 238 environmental features. Three predictive models, Random Forest (RF), Geographically Weighted Random Forest (GWRF), and One-Dimensional Convolutional Neural Network (1D-CNN), were combined with three feature selection methods (Boruta, RF importance, and Shapley) to construct 27 model–feature–depth combinations across three soil layers (0–10 cm, 10–20 cm, and 20–30 cm). RF feature selection combined with RF model achieved the highest prediction accuracy at 0–10 cm (R2 = 0.93, RMSE = 16.58 g/kg), with its bootstrap aggregation strategy effectively suppressing overfitting under small-sample and high-dimensional conditions. 1D-CNN showed relatively unstable performance, which may be associated with feature selection strategy, feature ordering sensitivity, a potential mismatch between its inductive bias and tabular environmental data. Feature importance analysis suggested that bulk density (BD) and soil moisture content (SMC) were among the most influential predictors across all depth layers, with elevation, radar backscatter coefficients, and Sentinel-1 texture features demonstrating relatively high cross-method and cross-depth stability. Boruta excluded BD and SMC at 0–10 cm, which may be partly attributable to inter-predictor redundancy, a strict independent-contribution threshold, and insufficient statistical power under small-sample conditions. For spatial mapping, the best-performing combination for each model was applied: RF feature selection with RF model, RF feature selection with GWRF model, and RF feature selection with 1D-CNN model. SOC maps revealed considerable spatial heterogeneity, with relatively high values concentrated in valley lowlands and lower values in high-altitude forest zones; mean SOC declined from 93.08 g/kg at 0–10 cm to 69.88 g/kg at 20–30 cm. Despite the limited number of sampling points (n = 90), these findings provide practical guidance for model and feature selection in SOC mapping of permafrost forests and a scientific basis for carbon sink assessment under climate warming scenarios. Conservation efforts should prioritize riparian zones and high-elevation areas with elevated SOC concentrations, while vegetation protection and reduced soil disturbance are recommended in low-SOC regions to help limit further carbon loss.",
+      "published": "2026-09-17T00:00:00+00:00",
+      "updated": "2026-09-17T00:00:00+00:00",
+      "paper_url": "https://doi.org/10.3390/rs18183199",
+      "pdf_url": "https://doi.org/10.3390/rs18183199",
+      "categories": [
+        "Remote Sensing",
+        "Soil Geostatistics and Mapping",
+        "Soil Moisture and Remote Sensing",
+        "Climate change and permafrost",
+        "Random forest",
+        "Permafrost",
+        "Feature selection",
+        "Overfitting",
+        "Synthetic aperture radar",
+        "Soil carbon"
+      ],
+      "seed_topic": "machine_learning_soil_carbon",
+      "matches": [
+        {
+          "topic_id": "machine_learning_soil_carbon",
+          "topic_name": "机器学习",
+          "score": 0.55,
+          "level": "medium",
+          "reason": "关键词命中：soil organic carbon machine learning、soil carbon prediction machine learning、soil organic carbon random forest",
+          "keyword_hits": [
+            "soil organic carbon machine learning",
+            "soil carbon prediction machine learning",
+            "soil organic carbon random forest"
+          ]
+        },
+        {
+          "topic_id": "remote_sensing_retrieval_prediction",
+          "topic_name": "遥感反演与预测",
+          "score": 0.41,
+          "level": "low",
+          "reason": "关键词命中：multispectral soil carbon mapping、Sentinel-2 soil organic carbon",
+          "keyword_hits": [
+            "multispectral soil carbon mapping",
+            "Sentinel-2 soil organic carbon"
+          ]
+        },
+        {
+          "topic_id": "mineral_associated_carbon",
+          "topic_name": "矿物结合态碳",
+          "score": 0.188,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        },
+        {
+          "topic_id": "iron_bound_carbon",
+          "topic_name": "铁结合态碳",
+          "score": 0.125,
+          "level": "low",
+          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
+          "keyword_hits": []
+        }
+      ],
+      "best_match": {
+        "topic_id": "machine_learning_soil_carbon",
+        "topic_name": "机器学习",
+        "score": 0.55,
+        "level": "medium",
+        "reason": "关键词命中：soil organic carbon machine learning、soil carbon prediction machine learning、soil organic carbon random forest",
+        "keyword_hits": [
+          "soil organic carbon machine learning",
+          "soil carbon prediction machine learning",
+          "soil organic carbon random forest"
+        ]
+      },
+      "chinese_summary": {
+        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
+        "method": "Soil organic carbon (SOC) in permafrost regions is a critical component of terrestrial carbon reservoirs, and spatially explicit multi-depth mapping is essential for identifying subsurface carbon emission hotspots and supporting carbon neutrality accounting.",
+        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
+        "evidence": "来源摘要可在论文原文中核验。",
+        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
+        "why_relevant": "关键词命中：soil organic carbon machine learning、soil carbon prediction machine learning、soil organic carbon random forest"
+      },
+      "first_seen_at": "2026-09-17T23:48:08.889489+00:00",
+      "last_seen_at": "2026-09-17T23:48:08.889489+00:00",
+      "retained_from_previous_run": false
+    },
+    {
       "id": "doi:10.3390/app16094433",
       "source": "OpenAlex",
       "title": "Cross-Regional Hyperspectral Estimation of Soil Organic Carbon in Eurasian Black Soils Using an Optimal Spectral Feature Set",
@@ -576,7 +668,7 @@
       },
       "first_seen_at": "2026-09-16T23:58:13.519648+00:00",
       "last_seen_at": "2026-09-16T23:58:13.519648+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "doi:10.1029/2025jg009429",
@@ -946,104 +1038,14 @@
       "first_seen_at": "2026-05-29T14:12:50.386040+00:00",
       "last_seen_at": "2026-05-29T14:15:08.044977+00:00",
       "retained_from_previous_run": true
-    },
-    {
-      "id": "doi:10.60923/issn.2281-4485/25018",
-      "source": "OpenAlex",
-      "title": "Associations of vegetation, microbial communities, and soil properties with mineral-associated organic carbon in karst soils",
-      "authors": [
-        "Hefeng Wan",
-        "Hao Lei",
-        "Xiuyuan Yang",
-        "Jing Wang",
-        "Guohua Liu",
-        "Jiang Hong"
-      ],
-      "summary": "Mineral-associated organic carbon (MAOC) is an important component of stable soil carbon pools, yet its distribution and controlling factors in karst ecosystems remain unclear due to strong soil heterogeneity. This study investigated the relationships between vegetation type, microbial communities, soil physicochemical properties, and MAOC amount in a karst watershed in Guizhou, China. Surface soils (0–20 cm) were collected from limestone-derived Leptosols under three vegetation types: grassland, arboreal forest, and shrubland. Soil physicochemical properties were analyzed in combination with high-throughput sequencing of bacterial 16S rRNA genes and fungal ITS regions. MAOC content was highest in arboreal forest soils (5.54 g/kg), followed by shrubland (2.83 g/kg) and grassland (1.84 g/kg). Microbial richness and diversity did not differ significantly among vegetation types, although bacterial diversity was consistently higher than that of fungi. Dominant bacterial phyla included Proteobacteria, Acidobacteriota, and Actinobacteriota, while fungal communities were dominated by Ascomycota, with relatively higher abundances of Basidiomycota and Rozellomycota in arboreal forest soils. Soil chemical properties showed no significant differences among vegetation types, whereas soil texture varied significantly. Across the study area, MAOC was positively associated with Actinobacteriota abundance, soil pH, and sand content, and negatively associated with clay and silt contents. These findings indicate that MAOC variation in karst soils is closely associated with vegetation type, soil texture, and microbial community composition. Arboreal forest soils were associated with relatively higher MAOC levels, highlighting the importance of vegetation–soil–microbe interactions in soil carbon stabilization and ecosystem quality in carbonate landscapes.",
-      "published": "2026-09-16T00:00:00+00:00",
-      "updated": "2026-09-16T00:00:00+00:00",
-      "paper_url": "https://doi.org/10.60923/issn.2281-4485/25018",
-      "pdf_url": "https://doi.org/10.60923/issn.2281-4485/25018",
-      "categories": [
-        "EQA - International Journal of Environmental Quality",
-        "Microbial Community Ecology and Physiology",
-        "Karst Systems and Hydrogeology",
-        "Soil Carbon and Nitrogen Dynamics",
-        "Soil carbon",
-        "Soil water",
-        "Vegetation (pathology)",
-        "Ecosystem",
-        "Karst",
-        "Soil quality"
-      ],
-      "seed_topic": "mineral_associated_carbon",
-      "matches": [
-        {
-          "topic_id": "mineral_associated_carbon",
-          "topic_name": "矿物结合态碳",
-          "score": 0.39,
-          "level": "low",
-          "reason": "关键词命中：mineral-associated organic carbon soil、MAOC soil carbon",
-          "keyword_hits": [
-            "mineral-associated organic carbon soil",
-            "MAOC soil carbon"
-          ]
-        },
-        {
-          "topic_id": "iron_bound_carbon",
-          "topic_name": "铁结合态碳",
-          "score": 0.156,
-          "level": "low",
-          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "remote_sensing_retrieval_prediction",
-          "topic_name": "遥感反演与预测",
-          "score": 0.156,
-          "level": "low",
-          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
-          "keyword_hits": []
-        },
-        {
-          "topic_id": "machine_learning_soil_carbon",
-          "topic_name": "机器学习",
-          "score": 0.125,
-          "level": "low",
-          "reason": "文本语义与方向描述存在弱相关，需要人工复核。",
-          "keyword_hits": []
-        }
-      ],
-      "best_match": {
-        "topic_id": "mineral_associated_carbon",
-        "topic_name": "矿物结合态碳",
-        "score": 0.39,
-        "level": "low",
-        "reason": "关键词命中：mineral-associated organic carbon soil、MAOC soil carbon",
-        "keyword_hits": [
-          "mineral-associated organic carbon soil",
-          "MAOC soil carbon"
-        ]
-      },
-      "chinese_summary": {
-        "problem": "未配置模型 API，当前仅基于标题、摘要和关键词生成基础摘要。",
-        "method": "Mineral-associated organic carbon (MAOC) is an important component of stable soil carbon pools, yet its distribution and controlling factors in karst ecosystems remain unclear due to strong soil heterogeneity.",
-        "innovation": "需要接入模型 API 后自动抽取更精确的中文创新点。",
-        "evidence": "来源摘要可在论文原文中核验。",
-        "limitations": "基础模式不会阅读全文，也不会进行深度技术对比。",
-        "why_relevant": "关键词命中：mineral-associated organic carbon soil、MAOC soil carbon"
-      },
-      "first_seen_at": "2026-09-16T23:58:13.519648+00:00",
-      "last_seen_at": "2026-09-16T23:58:13.519648+00:00",
-      "retained_from_previous_run": false
     }
   ],
   "stats": {
     "paper_count": 10,
-    "new_paper_count": 2,
+    "new_paper_count": 1,
     "days": 30,
     "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-09-15T23:49:30.531733+00:00",
+    "collection_cutoff_iso": "2026-09-16T23:58:13.519648+00:00",
     "max_per_topic": 25,
     "llm_enabled": false,
     "llm_concurrency": 2,
@@ -1056,12 +1058,12 @@
     "openalex_failed_fetches": 0,
     "crossref_successful_fetches": 0,
     "crossref_failed_fetches": 0,
-    "retained_paper_count": 8,
+    "retained_paper_count": 9,
     "retained_recent_low_count": 0,
-    "dropped_low_relevance_count": 0,
+    "dropped_low_relevance_count": 1,
     "max_stored_papers": 800,
     "max_data_bytes": 8388608,
-    "data_bytes": 63649,
+    "data_bytes": 65128,
     "storage_trimmed_count": 0,
     "storage_trimmed_by_level": {
       "high": 0,
