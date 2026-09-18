@@ -1,6 +1,6 @@
 {
-  "generated_at": "Thu, 17 Sep 2026 23:48:08 +0000",
-  "generated_at_iso": "2026-09-17T23:48:08.889489+00:00",
+  "generated_at": "Fri, 18 Sep 2026 23:45:43 +0000",
+  "generated_at_iso": "2026-09-18T23:45:43.587531+00:00",
   "config_source": "file",
   "topics": [
     {
@@ -484,7 +484,7 @@
       },
       "first_seen_at": "2026-09-17T23:48:08.889489+00:00",
       "last_seen_at": "2026-09-17T23:48:08.889489+00:00",
-      "retained_from_previous_run": false
+      "retained_from_previous_run": true
     },
     {
       "id": "doi:10.3390/app16094433",
@@ -1042,10 +1042,10 @@
   ],
   "stats": {
     "paper_count": 10,
-    "new_paper_count": 1,
+    "new_paper_count": 0,
     "days": 30,
     "collection_mode": "incremental",
-    "collection_cutoff_iso": "2026-09-16T23:58:13.519648+00:00",
+    "collection_cutoff_iso": "2026-09-17T23:48:08.889489+00:00",
     "max_per_topic": 25,
     "llm_enabled": false,
     "llm_concurrency": 2,
@@ -1058,9 +1058,9 @@
     "openalex_failed_fetches": 0,
     "crossref_successful_fetches": 0,
     "crossref_failed_fetches": 0,
-    "retained_paper_count": 9,
+    "retained_paper_count": 10,
     "retained_recent_low_count": 0,
-    "dropped_low_relevance_count": 1,
+    "dropped_low_relevance_count": 0,
     "max_stored_papers": 800,
     "max_data_bytes": 8388608,
     "data_bytes": 65128,
